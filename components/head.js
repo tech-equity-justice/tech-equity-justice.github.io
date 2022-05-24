@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function HeadMatter() {
   return (
     <Head>
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
 
       {/* facebook open graph tag */}
       <meta property="og:url" content="https://www.tejcenter.org/" />
