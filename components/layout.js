@@ -1,3 +1,12 @@
+import HeadMatter from "./head";
+import Menu from "./menu";
+
 export default function Layout({ children }) {
-  return <div>{children}</div>;
+  return (
+    <>
+      <HeadMatter />
+      <Menu />
+      {children}
+    </>
+  );
 }
