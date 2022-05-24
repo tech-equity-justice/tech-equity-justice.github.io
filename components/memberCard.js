@@ -1,4 +1,4 @@
-export default function BoardMemberCard({ member }) {
+export default function MemberCard({ member }) {
   return (
     <div className="card">
       <div className="card-header">

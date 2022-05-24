@@ -4,19 +4,22 @@ import Hero from "../components/hero";
 import Eligibility from "../components/eligibility";
 import AboutUs from "../components/aboutUs";
 import HowWeWork from "../components/howWeWork";
-import BoardMembers from "../components/boardMembers";
+import ShowMembers from "../components/showMembers";
 import { getSortedMembersData } from "../lib/getMembers";
 
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
+  const allAdvisoryMembersData = getSortedMembersData("advisory");
   return {
     props: {
       allBoardMembersData,
+      allAdvisoryMembersData,
     },
   };
 }
 export default function Home(props) {
   let allBoardMembersData = props.allBoardMembersData;
+  let allAdvisoryMembersData = props.allAdvisoryMembersData;
   return (
     <Layout>
       {/* <!-- Blob --> */}
@@ -28,7 +31,13 @@ export default function Home(props) {
         <Eligibility />
         <AboutUs />
         <HowWeWork />
-        <BoardMembers members={allBoardMembersData} />
+        <div className="wrapper" id="team">
+          <ShowMembers members={allBoardMembersData} title="BOARD" />
+          <ShowMembers
+            members={allAdvisoryMembersData}
+            title="ADVISORY GROUP"
+          />
+        </div>
       </div>
     </Layout>
   );
