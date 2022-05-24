@@ -5,10 +5,10 @@ import Eligibility from "../components/eligibility";
 import AboutUs from "../components/aboutUs";
 import HowWeWork from "../components/howWeWork";
 import BoardMembers from "../components/boardMembers";
-import { getSortedBoardMembersData } from "../lib/boardMembers";
+import { getSortedMembersData } from "../lib/getMembers";
 
 export async function getStaticProps() {
-  const allBoardMembersData = getSortedBoardMembersData();
+  const allBoardMembersData = getSortedMembersData("board");
   return {
     props: {
       allBoardMembersData,
