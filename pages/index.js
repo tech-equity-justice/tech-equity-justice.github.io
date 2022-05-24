@@ -42,7 +42,7 @@ export default function Home() {
         />
         {/* twitter card */}
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TEJ</title>
         <link
@@ -53,6 +53,34 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        {/* <!-- Navbar --> */}
+        <nav className="region-sm flex-start-md">
+          <div className="split-pair wrapper flex-center">
+            <div className="logo">
+              <a href="index.html">
+                <Image
+                  src="/images/logos/TEJ-main-lg.png"
+                  alt="TEJ Fellowship logo"
+                  className="nav-logo"
+                  width="72"
+                  height="61.563"
+                />
+              </a>
+            </div>
+            <div className="flex flex-start-md flex-center">
+              <a href="#about" className="body2-bold">
+                About us
+              </a>
+              <a href="#team" className="body2-bold">
+                Our team
+              </a>
+              <a href="#contact" className="body2-bold fire-button">
+                Contact us
+              </a>
+            </div>
+          </div>
+        </nav>
+        {/* <!-- Navbar ends --> */}
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
