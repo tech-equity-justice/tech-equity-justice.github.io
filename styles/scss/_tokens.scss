@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Nunito:wght@300;400;800&display=swap");
+
+$primary-font: "Archivo", sans-serif;
+$secondary-font: "Nunito", sans-serif;
+
+// colors
+$text-color: #202123;
+$light-color: #ffffff;
+$primary-color: #e43e43;
+$primary-color-light: #f0564e;
+$dark-color: #202123;
+$graphite: #202123;
+
+/* Core */
+$Fire: #e43e43;
+$Onyx: #141413;
+$Canvas: #f3e4d1;
+$Rattan: #d9b06f;
+
+/* Accent */
+$Gold: #ee9a12;
+$Indigo: #362d8b;
+$Bloom: #f6a6c7;
+$Mint: #b2e4dc;
+
+/* Neutral */
+$Powder: #fff6ee;
+$Straw: #eac896;
+
+/* Utilty */
+$Graphite: #606161;
+$Disabledbg: #b0b0b0;
+$Disabledtxt: #858585;
+$White: #ffffff;
+
+//font-size
+$h1: 5rem; //80px
+$h2: 4rem; //64px
+$h3: 3rem; //48px
+$h4: 2rem; //32px
+$h5: 1.5rem; //
+$h6: 1.125rem; //18px
+
+// Breakpoint Mixins
+// 480 / 640 / 1024 / 1400
+$breakpoint-up: (
+  "small": "30em",
+  "medium": "40em",
+  "large": "64em",
+  "xlarge": "87.5em",
+);
+
+// 639 / 1023 / 1399
+$breakpoint-down: (
+  "small": "39.9375em",
+  "medium": "63.9375em",
+  "large": "87.4375em",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoint-up, $size )) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoint-down, $size )) {
+    @content;
+  }
+}

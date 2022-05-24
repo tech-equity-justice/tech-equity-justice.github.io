@@ -1,0 +1,17 @@
+.hero {
+  margin-top: 4rem !important;
+  @include breakpoint-down(medium) {
+    margin-top: 1rem !important;
+  }
+}
+
+.blob {
+  background: #fcd4d440;
+  width: 40%;
+  height: 12%;
+  top: 7.5%;
+  left: -4%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}

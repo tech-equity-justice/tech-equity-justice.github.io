@@ -1,0 +1,45 @@
+.button {
+  padding: 1.125rem 3rem;
+  cursor: pointer;
+  font-family: $primary-font;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.primary-button {
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+  color: $light-color;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.secondary-button {
+  border: 1px solid $dark-color;
+  background-color: $light-color;
+  color: $text-color;
+  &:hover {
+    background-color: #fcf3f0;
+  }
+}
+
+.fire-button {
+  background: $primary-color-light;
+  color: $light-color;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  &:hover {
+    background-color: $primary-color;
+    color: $light-color;
+  }
+  a {
+    text-decoration: none;
+    color: $light-color;
+  }
+}
+
+.button-lg {
+  padding: 1rem 2rem;
+}

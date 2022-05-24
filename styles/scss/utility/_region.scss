@@ -1,0 +1,37 @@
+.region {
+  &-tn {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+  &-sm {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  &-md {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  &-lg {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    @include breakpoint-down(small) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  &-top-md {
+    padding-top: 2rem;
+  }
+
+  &-top-lg {
+    padding-top: 6rem;
+  }
+
+  &-top-xlg {
+    padding-top: 0rem;
+    @include breakpoint-up(medium) {
+      padding-top: 10rem;
+    }
+  }
+}

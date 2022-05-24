@@ -1,0 +1,12 @@
+.dark-block {
+  background-color: $dark-color;
+  color: $light-color;
+  padding: 5rem 0;
+
+  a {
+    color: $light-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.form {
+  form {
+    padding-top: 4rem;
+  }
+
+  .form_content {
+    width: 70%;
+    @include breakpoint-down(medium) {
+      width: 100%;
+    }
+  }
+
+  .grid-2up {
+    gap: 2rem;
+  }
+
+  section div > * + * {
+    margin-top: 0.5rem;
+  }
+
+  input {
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}

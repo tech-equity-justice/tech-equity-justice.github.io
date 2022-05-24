@@ -1,0 +1,22 @@
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-start {
+  justify-content: flex-start;
+
+  &-sm {
+    gap: 2rem;
+  }
+
+  &-md {
+    gap: 1rem;
+    @include breakpoint-up(small) {
+      gap: 3rem;
+    }
+  }
+}

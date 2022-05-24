@@ -1,0 +1,21 @@
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: $light-color;
+  z-index: 1000;
+  border-bottom: 2px solid rgba(110, 121, 200, 0.15);
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $primary-color;
+    }
+    font-size: 1.25rem;
+    @include breakpoint-down(medium) {
+      font-size: 1rem;
+    }
+  }
+  .nav-logo {
+    max-width: 72px;
+  }
+}

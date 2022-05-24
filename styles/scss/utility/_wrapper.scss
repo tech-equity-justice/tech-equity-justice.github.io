@@ -1,0 +1,28 @@
+.wrapper {
+  @extend %wrapper-shared;
+  max-width: 1440px;
+  &[data-variant="no-padding"] {
+    @extend %no-padding;
+  }
+  &-medium {
+    @extend %wrapper-shared;
+    max-width: 768px;
+    &[data-variant="no-padding"] {
+      @extend %no-padding;
+    }
+  }
+}
+
+%wrapper-shared {
+  margin: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  @include breakpoint-down(medium) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+%no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}

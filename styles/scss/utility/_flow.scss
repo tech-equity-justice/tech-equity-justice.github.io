@@ -1,0 +1,21 @@
+.flow {
+  &-sm > * + * {
+    padding-top: 1rem;
+  }
+  &-md > * + * {
+    padding-top: 1.5rem;
+  }
+  &-lg > * + * {
+    margin-top: 2rem !important;
+  }
+
+  &-xlg > * + * {
+    margin-top: 9rem !important;
+    @include breakpoint-down(medium) {
+      margin-top: 6rem !important;
+    }
+  }
+}
+.margin-top-0 {
+  margin-top: 0 !important;
+}

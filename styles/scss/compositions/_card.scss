@@ -1,0 +1,48 @@
+.card-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.card {
+  border: 1px solid $text-color;
+  .card-header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+  .card_img {
+    width: 120px;
+    height: 130px;
+    img {
+      height: 100%;
+      width: 100%;
+      min-width: 120px;
+      filter: contrast(0.85);
+      object-fit: cover;
+    }
+  }
+
+  .card_title {
+    margin-top: 1rem;
+    padding-right: 1.2rem;
+    .body1,
+    .body2 {
+      line-height: 1.33;
+    }
+    a.body1 {
+      color: $primary-color;
+      text-decoration: none;
+      &:hover {
+        color: $graphite;
+        text-decoration: underline;
+      }
+    }
+    & > * + * {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .card_description {
+    padding: 1.2rem;
+  }
+}
