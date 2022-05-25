@@ -6,6 +6,7 @@ import AboutUs from "../components/aboutUs";
 import HowWeWork from "../components/howWeWork";
 import ShowMembers from "../components/showMembers";
 import { getSortedMembersData } from "../lib/getMembers";
+import MailChimp from "../components/mailChimp";
 
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
@@ -38,6 +39,7 @@ export default function Home(props) {
             title="ADVISORY GROUP"
           />
         </div>
+        <MailChimp />
       </div>
     </Layout>
   );
