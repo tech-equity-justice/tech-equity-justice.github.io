@@ -1,3 +1,4 @@
+import Footer from "./footer";
 import HeadMatter from "./head";
 import Menu from "./menu";
 
@@ -7,6 +8,7 @@ export default function Layout({ children }) {
       <HeadMatter />
       <Menu />
       {children}
+      <Footer />
     </>
   );
 }
