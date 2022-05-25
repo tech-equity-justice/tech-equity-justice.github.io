@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import Eligibility from "../components/eligibility";

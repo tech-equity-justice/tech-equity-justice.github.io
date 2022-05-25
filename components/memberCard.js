@@ -6,7 +6,12 @@ export default function MemberCard({ member }) {
           <img src={member.photo} />
         </div>
         <div className="card_title">
-          <a target="_blank" href={member.linkedIn} className="body1">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={member.linkedIn}
+            className="body1"
+          >
             {member.name}
           </a>
         </div>
