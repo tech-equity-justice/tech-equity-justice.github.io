@@ -8,34 +8,28 @@ export default function Modal() {
   let signupModalDisplayed = getWithExpiry("signupClosedModalDisplayed");
 
   //Only execute rest of code if modal has not been displayed before
-  if (signupModalDisplayed === null) {
-    if (typeof window !== "undefined") {
-      //1.2 handles to document elements
-      //handle for modal
-      const modal = document.querySelector(".modal");
-      //set property to display modal
-      modal.style.display = "block";
-    }
+  if (signupModalDisplayed === null && typeof window !== "undefined") {
+    //1.2 handles to document elements
+    //handle for modal
+    const modal = document.querySelector(".modal");
+    //set property to display modal
+    modal.style.display = "block";
 
-    if (typeof window !== "undefined") {
-      //handle for x-button
-      const xModalClose = document.querySelector(".x-modal-close");
-      //2.1 for x
-      xModalClose.addEventListener("click", function () {
+    //handle for x-button
+    const xModalClose = document.querySelector(".x-modal-close");
+    //handle for signup button
+    const buttonJoinUs = document.querySelector(".button-join-us");
+
+    //2. add events
+    //2.1 for x
+    xModalClose.addEventListener("click", function () {
+      closeDisplay(modal);
+    });
+    //2.2 for join button
+    if (buttonJoinUs) {
+      buttonJoinUs.addEventListener("click", function () {
         closeDisplay(modal);
       });
-    }
-    if (typeof window !== "undefined") {
-      //handle for signup button
-      const buttonJoinUs = document.querySelector(".button-join-us");
-
-      //2. add events
-      //2.2 for join button
-      if (buttonJoinUs) {
-        buttonJoinUs.addEventListener("click", function () {
-          closeDisplay(modal);
-        });
-      }
     }
   }
 
@@ -52,28 +46,22 @@ export default function Modal() {
   function setWithExpiry(key, value, ttl) {
     const now = new Date();
 
-    //checking localStorage
-
     // `item` is an object which contains the original value
     // as well as the time when it's supposed to expire
     const item = {
       value: value,
       expiry: now.getTime() + ttl,
     };
-    if (typeof window !== "undefined") {
-      // Perform localStorage action
-      localStorage.setItem(key, JSON.stringify(item));
-    }
+    localStorage.setItem(key, JSON.stringify(item));
   }
 
   //for getting time expiry
   function getWithExpiry(key) {
     let itemStr;
     if (typeof window !== "undefined") {
-      // Perform localStorage action
       itemStr = localStorage.getItem(key);
+      // if the item doesn't exist, return null
     }
-    // if the item doesn't exist, return null
     if (!itemStr) {
       return null;
     }
@@ -88,6 +76,7 @@ export default function Modal() {
     }
     return item.value;
   }
+
   return (
     /* Modal */
     <div className="modal">
