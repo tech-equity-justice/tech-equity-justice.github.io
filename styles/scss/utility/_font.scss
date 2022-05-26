@@ -55,7 +55,7 @@
 }
 .hero-title {
   font-family: $primary-font;
-  font-size: $h2;
+  font-size: $h4;
   letter-spacing: 1.3px;
   @include breakpoint-up(small) {
     font-size: $h3;

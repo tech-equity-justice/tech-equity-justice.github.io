@@ -4,7 +4,7 @@ export default function Menu() {
     <nav className="region-sm flex-start-md">
       <div className="split-pair wrapper flex-center">
         <div className="logo">
-          <a href="index.html">
+          <a href="/">
             <img
               src="/images/logos/TEJ-main-lg.png"
               alt="TEJ Fellowship logo"
