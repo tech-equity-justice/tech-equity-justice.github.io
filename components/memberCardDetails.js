@@ -1,4 +1,15 @@
+import { useState } from "react";
+
 export default function MemberCardDetails({ member }) {
+  const startHeight = "7.2em";
+  const [height, setHeight] = useState(startHeight);
+  const [buttonDisplay, setButtonDisplay] = useState("Read more");
+
+  const toggleDisplay = () => {
+    setHeight(height === startHeight ? "auto" : startHeight);
+    setButtonDisplay(buttonDisplay === "Read more" ? "Read less" : "Read more");
+  };
+
   return (
     <div className="team_member">
       <div className="member_img">
@@ -9,14 +20,14 @@ export default function MemberCardDetails({ member }) {
       </a>
       {member.content !== "" && (
         <>
-          <p className="content" id="content-1">
+          <p className="content" style={{ height: height }}>
             {member.content}
           </p>
-          <button className="read-more-team" id="read-more-team-1">
-            Read more
-          </button>
-          <button className="read-less-team" id="read-less-team-1">
-            Read less
+          <button
+            className="read-more-team fire-button"
+            onClick={toggleDisplay}
+          >
+            {buttonDisplay}
           </button>
         </>
       )}

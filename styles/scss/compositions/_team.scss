@@ -61,35 +61,29 @@
   p {
     font-family: $secondary-font;
     font-size: 1.125rem;
-    padding: 0 0.875rem 0.875rem;
+    padding: 0 0.875rem;
     line-height: 1.2;
   }
-  .content{
-      overflow: hidden;
-      height: 7em;
-      transition: all 0.23s ease-in-out 0s;
-  }
-  .read-more-team{
-    background-color: #e4232a;
-    border: 0 none;
-    border-radius: 4px;
+  .content {
+    overflow: hidden;
     transition: all 0.23s ease-in-out 0s;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-size: 15px;    line-height: 32px;
-    margin: 10px;
-    padding: 0 20px;
-   
   }
-  .read-less-team{
+  .read-more-team {
+    font-size: 1rem;
+    cursor: pointer;
+
+    margin: 0.875rem;
+  }
+  .read-less-team {
     display: none;
     background-color: #e4232a;
     border: 0 none;
     border-radius: 4px;
     transition: all 0.23s ease-in-out 0s;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
-    font-size: 15px;    line-height: 32px;
+    font-size: 15px;
+    line-height: 32px;
     margin: 10px;
     padding: 0 20px;
   }
