@@ -1,4 +1,5 @@
 import MemberCard from "./memberCard";
+import MemberCardDetails from "./memberCardDetails";
 
 export default function ShowMembers({ members, title }) {
   return (
@@ -8,7 +9,8 @@ export default function ShowMembers({ members, title }) {
       </div>
       <div className="card-container grid grid-4up">
         {members.map((member) => (
-          <MemberCard member={member} key={member.id} />
+          // <MemberCard member={member} key={member.id} />
+          <MemberCardDetails member={member} key={member.id} />
         ))}
       </div>
     </>
