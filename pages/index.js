@@ -12,10 +12,12 @@ import MemberCardDetails from "../components/memberCardDetails";
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
   const allAdvisoryMembersData = getSortedMembersData("advisory");
+  const allFellows2022 = getSortedMembersData("fellows-2022");
   return {
     props: {
       allBoardMembersData,
       allAdvisoryMembersData,
+      allFellows2022,
     },
   };
 }
@@ -27,6 +29,7 @@ const ShowMemberCardDetails = ShowMembers(MemberCardDetails);
 export default function Home(props) {
   let allBoardMembersData = props.allBoardMembersData;
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
+  let allFellows2022 = props.allFellows2022;
   return (
     <Layout>
       {/* <!-- Blob --> */}
@@ -39,6 +42,10 @@ export default function Home(props) {
         <AboutUs />
         <HowWeWork />
         <div className="wrapper" id="team">
+          <ShowMemberCardDetails
+            members={allFellows2022}
+            title="2022 TEJ Fellows"
+          />
           <ShowMemberCardDetails members={allBoardMembersData} title="BOARD" />
           <ShowMemberCardDetails
             members={allAdvisoryMembersData}

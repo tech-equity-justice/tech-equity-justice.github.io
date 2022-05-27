@@ -15,9 +15,15 @@ export default function MemberCardDetails({ member }) {
       <div className="member_img">
         <img src={member.photo} alt="our_team" />
       </div>
-      <a target="_blank" rel="noreferrer" href={member.linkedIn}>
-        <h3>{member.name}</h3>
-      </a>
+      {member.linkedIn !== "" ? (
+        <a target="_blank" rel="noreferrer" href={member.linkedIn}>
+          <h3>{member.name}</h3>
+        </a>
+      ) : (
+        <a>
+          <h3>{member.name}</h3>
+        </a>
+      )}
       {member.content !== "" && (
         <>
           <p className="content" style={{ height: height }}>

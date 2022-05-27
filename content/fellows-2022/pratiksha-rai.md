@@ -1,0 +1,5 @@
+---
+name: "Pratiksha Rai"
+linkedIn: ""
+photo: "/images/fellows/2022/pratiksha-rai.jpg"
+---
