@@ -42,21 +42,18 @@
   }
   a {
     text-decoration: none;
+    color: $Fire;
     h3 {
       text-transform: uppercase;
       font-size: 18px;
       line-height: 18px;
       letter-spacing: 2px;
       padding: 0.875rem;
-      color: $Fire;
       text-decoration: none;
     }
-    &:hover h3 {
+    &:hover {
       color: $Gold;
     }
-  }
-  span {
-    font-size: 10px;
   }
   p {
     font-family: $secondary-font;

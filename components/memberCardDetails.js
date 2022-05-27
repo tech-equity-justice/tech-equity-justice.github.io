@@ -21,7 +21,7 @@ export default function MemberCardDetails({ member }) {
       {member.content !== "" && (
         <>
           <p className="content" style={{ height: height }}>
-            {member.content}
+            <span dangerouslySetInnerHTML={{ __html: member.content }} />
           </p>
           <button
             className="read-more-team fire-button"
