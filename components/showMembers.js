@@ -1,18 +1,19 @@
-import MemberCard from "./memberCard";
-import MemberCardDetails from "./memberCardDetails";
-
-export default function ShowMembers({ members, title }) {
-  return (
-    <>
-      <div>
-        <p className="h2">{title}</p>
-      </div>
-      <div className="card-container grid grid-4up">
-        {members.map((member) => (
-          // <MemberCard member={member} key={member.id} />
-          <MemberCardDetails member={member} key={member.id} />
-        ))}
-      </div>
-    </>
-  );
+// Creating a higher order function that
+// takes a component and returns with it
+// wrapped around by additional functionality
+export default function ShowMembers(Component) {
+  return function ShowMembersComponent({ members, title }) {
+    return (
+      <>
+        <div>
+          <p className="h2">{title}</p>
+        </div>
+        <div className="card-container grid grid-4up">
+          {members.map((member) => (
+            <Component member={member} key={member.id} />
+          ))}
+        </div>
+      </>
+    );
+  };
 }

@@ -6,6 +6,8 @@ import HowWeWork from "../components/howWeWork";
 import ShowMembers from "../components/showMembers";
 import { getSortedMembersData } from "../lib/getMembers";
 import MailChimp from "../components/mailChimp";
+import MemberCard from "../components/memberCard";
+import MemberCardDetails from "../components/memberCardDetails";
 
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
@@ -17,6 +19,11 @@ export async function getStaticProps() {
     },
   };
 }
+
+// Using Higher order function to get our components wrapped around some functionality
+const ShowMemberCard = ShowMembers(MemberCard);
+const ShowMemberCardDetails = ShowMembers(MemberCardDetails);
+
 export default function Home(props) {
   let allBoardMembersData = props.allBoardMembersData;
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
@@ -32,8 +39,8 @@ export default function Home(props) {
         <AboutUs />
         <HowWeWork />
         <div className="wrapper" id="team">
-          <ShowMembers members={allBoardMembersData} title="BOARD" />
-          <ShowMembers
+          <ShowMemberCardDetails members={allBoardMembersData} title="BOARD" />
+          <ShowMemberCardDetails
             members={allAdvisoryMembersData}
             title="ADVISORY GROUP"
           />
