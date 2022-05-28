@@ -22,10 +22,6 @@ export async function getStaticProps() {
   };
 }
 
-// Using Higher order function to get our components wrapped around some functionality
-const ShowMemberCard = ShowMembers(MemberCard);
-const ShowMemberCardDetails = ShowMembers(MemberCardDetails);
-
 export default function Home(props) {
   let allBoardMembersData = props.allBoardMembersData;
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
@@ -42,14 +38,20 @@ export default function Home(props) {
         <AboutUs />
         <HowWeWork />
         <div className="wrapper" id="team">
-          <ShowMemberCardDetails
+          <ShowMembers
             members={allFellows2022}
             title="2022 TEJ Fellows"
+            Component={MemberCardDetails}
           />
-          <ShowMemberCardDetails members={allBoardMembersData} title="BOARD" />
-          <ShowMemberCardDetails
+          <ShowMembers
+            members={allBoardMembersData}
+            title="BOARD"
+            Component={MemberCardDetails}
+          />
+          <ShowMembers
             members={allAdvisoryMembersData}
             title="ADVISORY GROUP"
+            Component={MemberCardDetails}
           />
         </div>
         <MailChimp />
