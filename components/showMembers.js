@@ -8,11 +8,12 @@ import MemberCardDetails from "../components/memberCardDetails";
 export default function ShowMembers({
   members,
   title,
+  tagID,
   Component = MemberCardDetails,
 }) {
   return (
     <>
-      <div>
+      <div id={tagID && tagID}>
         <p className="h2">{title}</p>
       </div>
       <div className="card-container grid grid-4up">

@@ -21,6 +21,9 @@ export default function Menu() {
           <a href="#team" className="body2-bold">
             Our team
           </a>
+          <a href="#fellows-2022" className="body2-bold">
+            Our Fellows
+          </a>
           <a href="#contact" className="body2-bold fire-button">
             Contact us
           </a>

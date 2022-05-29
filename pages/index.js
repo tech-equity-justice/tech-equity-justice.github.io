@@ -37,15 +37,17 @@ export default function Home(props) {
         <Eligibility />
         <AboutUs />
         <HowWeWork />
-        <div className="wrapper" id="team">
+        <div className="wrapper">
           <ShowMembers
             members={allFellows2022}
             title="2022 TEJ Fellows"
+            tagID="fellows-2022"
             Component={MemberCardDetails}
           />
           <ShowMembers
             members={allBoardMembersData}
             title="BOARD"
+            tagID="team"
             Component={MemberCardDetails}
           />
           <ShowMembers
