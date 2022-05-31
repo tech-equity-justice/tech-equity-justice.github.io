@@ -12,21 +12,20 @@ import MemberCardDetails from "../components/memberCardDetails";
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
   const allAdvisoryMembersData = getSortedMembersData("advisory");
+  const allFellows2022 = getSortedMembersData("fellows-2022");
   return {
     props: {
       allBoardMembersData,
       allAdvisoryMembersData,
+      allFellows2022,
     },
   };
 }
 
-// Using Higher order function to get our components wrapped around some functionality
-const ShowMemberCard = ShowMembers(MemberCard);
-const ShowMemberCardDetails = ShowMembers(MemberCardDetails);
-
 export default function Home(props) {
   let allBoardMembersData = props.allBoardMembersData;
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
+  let allFellows2022 = props.allFellows2022;
   return (
     <Layout>
       {/* <!-- Blob --> */}
@@ -38,11 +37,23 @@ export default function Home(props) {
         <Eligibility />
         <AboutUs />
         <HowWeWork />
-        <div className="wrapper" id="team">
-          <ShowMemberCardDetails members={allBoardMembersData} title="BOARD" />
-          <ShowMemberCardDetails
+        <div className="wrapper">
+          <ShowMembers
+            members={allFellows2022}
+            title="2022 TEJ Fellows"
+            tagID="fellows-2022"
+            Component={MemberCardDetails}
+          />
+          <ShowMembers
+            members={allBoardMembersData}
+            title="BOARD"
+            tagID="team"
+            Component={MemberCardDetails}
+          />
+          <ShowMembers
             members={allAdvisoryMembersData}
             title="ADVISORY GROUP"
+            Component={MemberCardDetails}
           />
         </div>
         <MailChimp />
