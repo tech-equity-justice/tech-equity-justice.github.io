@@ -83,7 +83,7 @@ export default function Modal() {
           <div className="region-top-md">
             <a
               href="#fellows-2022"
-              className="button-lg fire-button"
+              className="button-lg fire-button display-block display-inline-sm"
               id="modal-button"
               onClick={closeDisplay}
             >

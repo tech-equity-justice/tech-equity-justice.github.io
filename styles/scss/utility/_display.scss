@@ -1,0 +1,9 @@
+.display-block {
+  display: block;
+}
+
+@include breakpoint-up(small) {
+  .display-inline-sm {
+    display: inline;
+  }
+}
