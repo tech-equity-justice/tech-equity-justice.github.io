@@ -19,7 +19,7 @@ export default function Hero() {
           <div className="region-tn">
             <p className="region-sm body1">
               TEJ trains individuals from underrepresented communities to become
-              software engineers through its in-house 10-month full time
+              software engineers through its in-house nine-month full time
               fellowship.
             </p>
           </div>

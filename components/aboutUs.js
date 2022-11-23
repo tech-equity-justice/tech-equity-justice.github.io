@@ -11,7 +11,7 @@ export default function AboutUs() {
             <p className="h5">WHAT IS TEJ?</p>
             <p className="region-tn body2">
               Technology for Equity and Justice (TEJ), a US based organization,
-              has developed a 10 month coding fellowship for students from
+              has developed a nine month coding fellowship for students from
               marginalized and underrepresented communities. The fellows will be
               trained from little or no coding knowledge to fully capable
               software engineers earning competitive salaries. Fellows will be
@@ -19,8 +19,8 @@ export default function AboutUs() {
             </p>
             <p className="region-tn body2">
               The TEJ Fellows are selected following a rigorous selection
-              process. The 10 month fellowship is conducted in two phases: I)
-              The Software Engineering Bootcamp phase is an in-house 6-month
+              process. The nine month fellowship is conducted in two phases: I)
+              The Software Engineering Bootcamp phase is an in-house six-month
               full time bootcamp training program teaching javascript language
               frontend and backend skills. The training is facilitated by highly
               experienced IT Engineers with work experience in the United States
@@ -49,7 +49,7 @@ export default function AboutUs() {
               than those from privileged class and caste groups due to
               structural barriers, including a lack of access to information and
               resources. To address this issue and close the gap, TEJ has
-              created a 10 month coding fellowship designed to ensure the
+              created a nine month coding fellowship designed to ensure the
               success of students from underrepresented groups and communities.
             </p>
           </div>
