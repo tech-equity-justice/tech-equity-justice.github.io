@@ -24,8 +24,13 @@ export default function Menu() {
           <a href="#fellows-2022" className="body2-bold">
             Our Fellows
           </a>
-          <a href="#contact" className="body2-bold fire-button">
-            Contact us
+          <a
+            href="https://forms.gle/tP3vtW6UyhTuud83A"
+            className="body2-bold fire-button"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Apply now!
           </a>
         </div>
       </div>
