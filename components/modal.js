@@ -77,17 +77,18 @@ export default function Modal() {
           &#x4d;
         </span>
         <div className="region-lg wrapper align-center">
-          <h1>Congratulations to</h1>
-          <h1>the inaugural cohort of</h1>
-          <h1>TEJ Fellows</h1>
+          <h1>TEJ Fellowship Application</h1>
+          <h1>Open till March 19 2023!</h1>
           <div className="region-top-md">
             <a
-              href="#fellows-2022"
+              href="https://forms.gle/tP3vtW6UyhTuud83A"
               className="button-lg fire-button display-block display-inline-sm"
               id="modal-button"
               onClick={closeDisplay}
+              target="_blank"
+              rel="noreferrer"
             >
-              MEET THE CLASS OF 2022
+              APPLY NOW
             </a>
           </div>
         </div>
