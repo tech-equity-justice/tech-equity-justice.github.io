@@ -30,7 +30,7 @@ export default function Menu() {
             target="_blank"
             rel="noreferrer"
           >
-            Apply now!
+            Apply now
           </a>
         </div>
       </div>

@@ -20,10 +20,7 @@ export default function Eligibility() {
                   Communities underrepresented in the technology sector in Nepal
                   (caste, gender, and other identities)
                 </li>
-                <li>
-                  Completed at least one year in Bachelors in Engineering /
-                  Sciences or other related fields
-                </li>
+                <li>Able to dedicate full time commitment to the fellowship</li>
                 <li>Interest in pursuing a career in technology</li>
                 <li>
                   Demonstrated ability to work hard and collaborate in diverse
