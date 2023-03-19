@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 export default function Modal() {
   const [modalVisibility, setModalVisibility] = useState("none");
 
+  //show modal or not
+  const showModal = false;
+
   //1. variables
   //1.1 constants
   //time in between showing the modal 24hrs in milisecond
@@ -10,18 +13,21 @@ export default function Modal() {
 
   useEffect(
     () => {
-      //1.2 local vars
-      //Get from localstorage value for if modal has been displayed
-      let signupModalDisplayed = getWithExpiry("signupClosedModalDisplayed");
+      //only run this logic if showModal is true
+      if (showModal) {
+        //1.2 local vars
+        //Get from localstorage value for if modal has been displayed
+        let signupModalDisplayed = getWithExpiry("signupClosedModalDisplayed");
 
-      //Only execute rest of code if modal has not been displayed before
-      if (signupModalDisplayed === null && typeof window !== "undefined") {
-        //set property to display modal
-        setModalVisibility("block");
+        //Only execute rest of code if modal has not been displayed before
+        if (signupModalDisplayed === null && typeof window !== "undefined") {
+          //set property to display modal
+          setModalVisibility("block");
+        }
       }
     },
     // Run only after first mount
-    []
+    [showModal]
   );
 
   //3. methods
