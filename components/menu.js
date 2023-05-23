@@ -1,6 +1,20 @@
 import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/router";
+import { FirstCohort } from "../pages/first-cohort";
 
 export default function Menu() {
+  const [visibility, setVisibiliy] = useState(false);
+  const router = useRouter();
+
+  const handleBatchOptionToggle = () => {
+    setVisibiliy(!visibility);
+  };
+
+  const handleBatchClick = (FirstCohort) => {
+    router.push(`/${FirstCohort}`);
+  };
+
   return (
     /* Navbar */
     <nav className="region-sm flex-start-md">
@@ -24,6 +38,23 @@ export default function Menu() {
           <a href="#fellows-2022" className="body2-bold">
             Our Fellows
           </a>
+          <div
+            className="hover-container"
+            onMouseEnter={handleBatchOptionToggle}
+            onMouseLeave={handleBatchOptionToggle}
+          >
+            <a>Alumni</a>
+            {visibility && (
+              <div className="cohorts">
+                <div
+                  onClick={() => handleBatchClick("first-cohort")}
+                  //className="body2-bold"
+                >
+                  2023-5-Batch
+                </div>
+              </div>
+            )}
+          </div>
           <a href="#contact" className="body2-bold fire-button">
             Contact us
           </a>

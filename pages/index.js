@@ -13,11 +13,13 @@ export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
   const allAdvisoryMembersData = getSortedMembersData("advisory");
   const allFellows2022 = getSortedMembersData("fellows-2022");
+  const allAlumni2022 = getSortedMembersData("alumni-2022");
   return {
     props: {
       allBoardMembersData,
       allAdvisoryMembersData,
       allFellows2022,
+      allAlumni2022,
     },
   };
 }
@@ -26,6 +28,7 @@ export default function Home(props) {
   let allBoardMembersData = props.allBoardMembersData;
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
   let allFellows2022 = props.allFellows2022;
+  let allAlumni2022 = props.allAlumni2022;
   return (
     <Layout>
       {/* <!-- Blob --> */}
