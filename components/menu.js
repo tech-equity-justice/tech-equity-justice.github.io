@@ -4,12 +4,12 @@ import { useRouter } from "next/router";
 import { FirstCohort } from "../pages/first-cohort";
 
 export default function Menu() {
-  const [visibility, setVisibiliy] = useState(false);
+  //const [visibility, setVisibiliy] = useState(false);
   const router = useRouter();
 
-  const handleBatchOptionToggle = () => {
-    setVisibiliy(!visibility);
-  };
+  // const handleBatchOptionToggle = () => {
+  //   setVisibiliy(!visibility);
+  // };
 
   const handleBatchClick = (FirstCohort) => {
     router.push(`/${FirstCohort}`);
@@ -35,26 +35,24 @@ export default function Menu() {
           <a href="#team" className="body2-bold">
             Our team
           </a>
-          <a href="#fellows-2022" className="body2-bold">
-            Our Fellows
-          </a>
-          <div
-            className="hover-container"
-            onMouseEnter={handleBatchOptionToggle}
-            onMouseLeave={handleBatchOptionToggle}
-          >
-            <a>Alumni</a>
-            {visibility && (
-              <div className="cohorts">
-                <div
-                  onClick={() => handleBatchClick("first-cohort")}
-                  //className="body2-bold"
-                >
-                  2023-5-Batch
-                </div>
+
+          <div className="navbar-fellow">
+            <button className="dropbtn">
+              Our fellows<i className="fa fa-caret-down"></i>
+            </button>
+            <div className="dropdown-content">
+              <div className="cohort-container">
+                <a onClick={() => handleBatchClick("first-cohort")}>
+                  2022 First Cohort
+                </a>
+
+                <a onClick={() => handleBatchClick("first-cohort")}>
+                  2023 First Cohort
+                </a>
               </div>
-            )}
+            </div>
           </div>
+
           <a href="#contact" className="body2-bold fire-button">
             Contact us
           </a>
