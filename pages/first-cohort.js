@@ -23,7 +23,7 @@ export default function FirstCohort(props) {
   return (
     <div>
       <Menu />
-      <div>
+      <div className="wrapper">
         <ShowMembers
           members={allAlumni2022}
           title="2022 TEJ Fellows"

@@ -11,8 +11,17 @@ export default function Menu() {
   //   setVisibiliy(!visibility);
   // };
 
-  const handleBatchClick = (FirstCohort) => {
-    router.push(`/${FirstCohort}`);
+  const handleBatchClick = (batch) => {
+    if (batch === "first-cohort") {
+      router.push("/first-cohort");
+    } else if (batch === "fellows-2022") {
+      router.push("/#fellows-2022");
+    } else if (batch === "about") {
+      router.push("/#about");
+    } else if (batch === "team") {
+      router.push("/#team");
+    }
+    // router.push(`/${FirstCohort}`);
   };
 
   return (
@@ -29,10 +38,18 @@ export default function Menu() {
           </Link>
         </div>
         <div className="flex flex-start-md flex-center">
-          <a href="#about" className="body2-bold">
+          <a
+            // href="#about"
+            className="body2-bold"
+            onClick={() => handleBatchClick("about")}
+          >
             About us
           </a>
-          <a href="#team" className="body2-bold">
+          <a
+            // href="#team"
+            className="body2-bold"
+            onClick={() => handleBatchClick("team")}
+          >
             Our team
           </a>
 
@@ -43,8 +60,8 @@ export default function Menu() {
             <div className="dropdown-content">
               <div className="cohort-container">
                 <a
-                  // onClick={() => handleBatchClick("first-cohort")}
-                  href="#fellows"
+                  onClick={() => handleBatchClick("fellows-2022")}
+                  // href="#fellows-2022"
                   className="body2-bold"
                 >
                   2023 First Cohort
