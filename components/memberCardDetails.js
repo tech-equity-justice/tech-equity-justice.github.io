@@ -42,9 +42,9 @@ export default function MemberCardDetails({ member }) {
           >
             {buttonDisplay}
           </button>{" "}
-          {member.name === "Suraj Gaire" && designationDisplay && (
+          {/* {member.name === "Suraj Gaire" && designationDisplay && (
             <h3 className="teaching-fellow">Teaching Fellow</h3>
-          )}{" "}
+          )}{" "} */}
         </>
       )}
     </div>
