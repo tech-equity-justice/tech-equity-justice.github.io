@@ -14,7 +14,7 @@ export async function getStaticProps() {
   const allAdvisoryMembersData = getSortedMembersData("advisory");
   const allFellows2023 = getSortedMembersData("fellows-2023");
   const teachingFellow = getSortedMembersData("teaching-fellow-2023");
-  //console.log(allFellows2022, "fellow");
+
   return {
     props: {
       allBoardMembersData,
