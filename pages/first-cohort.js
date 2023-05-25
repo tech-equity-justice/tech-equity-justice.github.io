@@ -6,6 +6,7 @@ import { getSortedMembersData } from "../lib/getMembers";
 
 export async function getStaticProps() {
   const allAlumni2022 = getSortedMembersData("alumni-2022");
+  //console.log(allAlumni2022, "snake");
   return {
     props: {
       allAlumni2022,
