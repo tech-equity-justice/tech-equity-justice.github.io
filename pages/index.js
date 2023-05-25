@@ -14,6 +14,7 @@ export async function getStaticProps() {
   const allAdvisoryMembersData = getSortedMembersData("advisory");
   const allFellows2022 = getSortedMembersData("fellows-2022");
   const allAlumni2022 = getSortedMembersData("alumni-2022");
+  console.log(allFellows2022, "fellow");
   return {
     props: {
       allBoardMembersData,
@@ -43,7 +44,7 @@ export default function Home(props) {
         <div className="wrapper">
           <ShowMembers
             members={allFellows2022}
-            title="2022 TEJ Fellows"
+            title="2023 TEJ Fellows"
             tagID="fellows-2022"
             Component={MemberCardDetails}
           />

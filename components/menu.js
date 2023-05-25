@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
+//import { useState } from "react";
 import { useRouter } from "next/router";
 import { FirstCohort } from "../pages/first-cohort";
 
@@ -37,17 +37,24 @@ export default function Menu() {
           </a>
 
           <div className="navbar-fellow">
-            <button className="dropbtn">
+            <button className="body2-bold">
               Our fellows<i className="fa fa-caret-down"></i>
             </button>
             <div className="dropdown-content">
               <div className="cohort-container">
-                <a onClick={() => handleBatchClick("first-cohort")}>
-                  2022 First Cohort
+                <a
+                  // onClick={() => handleBatchClick("first-cohort")}
+                  href="#fellows"
+                  className="body2-bold"
+                >
+                  2023 First Cohort
                 </a>
 
-                <a onClick={() => handleBatchClick("first-cohort")}>
-                  2023 First Cohort
+                <a
+                  onClick={() => handleBatchClick("first-cohort")}
+                  className="body2-bold"
+                >
+                  2022 First Cohort
                 </a>
               </div>
             </div>
