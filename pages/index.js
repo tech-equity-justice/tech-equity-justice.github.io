@@ -49,7 +49,7 @@ export default function Home(props) {
           />
           <ShowMembers
             members={teachingFellow}
-            title="Teaching fellows"
+            title="Teaching Fellows"
             tagID="teaching-fellow-2023"
             Component={MemberCardDetails}
           />
