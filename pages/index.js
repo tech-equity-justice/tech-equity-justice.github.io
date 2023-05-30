@@ -6,7 +6,6 @@ import HowWeWork from "../components/howWeWork";
 import ShowMembers from "../components/showMembers";
 import { getSortedMembersData } from "../lib/getMembers";
 import MailChimp from "../components/mailChimp";
-import MemberCard from "../components/memberCard";
 import MemberCardDetails from "../components/memberCardDetails";
 
 export async function getStaticProps() {
@@ -45,10 +44,9 @@ export default function Home(props) {
           <ShowMembers
             members={allFellows2023}
             title="2023 TEJ Fellows"
-            tagID="fellows-2022"
+            tagID="fellows-current"
             Component={MemberCardDetails}
           />
-
           <ShowMembers
             members={teachingFellow}
             title="Teaching fellows"

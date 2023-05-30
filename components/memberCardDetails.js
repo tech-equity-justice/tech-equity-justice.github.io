@@ -17,11 +17,6 @@ export default function MemberCardDetails({ member }) {
       <div className="member_img">
         <img src={member.photo} alt="our_team" />
       </div>
-      <div className="member-title">
-        {/* {member.name === "Suraj Gaire" && designationDisplay && (
-          <h6>Teaching fellow</h6>
-        )} */}
-      </div>
       {member.linkedIn !== "" ? (
         <a target="_blank" rel="noreferrer" href={member.linkedIn}>
           <h3>{member.name}</h3>
@@ -41,10 +36,7 @@ export default function MemberCardDetails({ member }) {
             onClick={toggleDisplay}
           >
             {buttonDisplay}
-          </button>{" "}
-          {/* {member.name === "Suraj Gaire" && designationDisplay && (
-            <h3 className="teaching-fellow">Teaching Fellow</h3>
-          )}{" "} */}
+          </button>
         </>
       )}
     </div>
