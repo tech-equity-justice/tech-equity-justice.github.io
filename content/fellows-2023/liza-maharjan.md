@@ -4,4 +4,4 @@ linkedIn: ""
 photo: "/images/fellows/2023/liza-maharjan.png"
 ---
 
-Liza Maharjan comes from Biratchowk, Morang and is completing his Bachelor's degree in Electronics and Communication Engineering from the Institute of Engineering, Purwanchal campus, in Dharan. He is fond of computers and spends much of his time in front of his laptop learning different software technologies. He is also known to be very resourceful in times of need, and maybe will share his tips with you.
+I am Liza Maharjan from Lagantole, Kathmandu, a current student at Prime College pursuing a Bachelor's degree in Information Management (BIM). With a passion for designing, music, and coding, I have always been interested in exploring new ideas and creating solutions to tackle social issues. In my free time, I enjoy hiking and trekking to explore the beautiful landscapes of my home country. Through my work and hobbies, I am dedicated to making a positive impact in my community and beyond.

@@ -4,4 +4,4 @@ linkedIn: ""
 photo: "/images/fellows/2023/sharmila-jirel.jpg"
 ---
 
-Sharmila Jirel completed his Bachelor's degree in Business Management from Tribhuvan Multiple Campus in Tansen, Palpa, which is also his hometown. Though he has no formal experience in software development, he loves working with computers and enjoys exploring new things. He also loves sports, traveling, photography and editing.
+Sharmila Jirel is originally from Jiri, Dolakha. She is a Computer Science student and web developer with high interest in computers and technology. Pursuing her passion, she is on a journey in Computer Science, immersing herself in the world of coding, web development and software engineering. Besides work and education, she finds solace and excitement in hiking and exploring the great outdoors. Additionally, she enjoys engaging in sports activities too. With each project she tackles and every place she visits, she likes to make her mark, inspiring others to embrace their passions and pursue their dreams.

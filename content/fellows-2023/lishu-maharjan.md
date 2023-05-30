@@ -4,4 +4,4 @@ linkedIn: ""
 photo: "/images/fellows/2023/lishu-maharjan.jpg"
 ---
 
-Lishu Maharjan completed his Bachelor's degree in Computer Science from Patan College for Professional Studies. He is well-trained in technical troubleshooting and knows how to expertly break down problems. He has worked as a Software Engineer intern. In his free time, he learns more programming skills and is currently working on his own web-based voting system that integrates facial recognition. He is skilled in solving everyday unexpected problems with technical solutions.
+My name is Lishu Maharjan, and I'm from Bhimsensthan, Kathmandu. At Prime College, I am now pursuing a Bachelor of Information Management (BIM) degree. Since I was little, I have had a strong interest in world history, music, nature exploration, and learning new things. I've always been interested in a career in IT, despite not having held any IT-related employment. I was able to learn useful programming skills over the course of four years, and I'm now trying to concentrate on becoming a Software Developer.

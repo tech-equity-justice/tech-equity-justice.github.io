@@ -4,4 +4,5 @@ linkedIn: ""
 photo: "/images/fellows/2023/aarju-pariyar.JPG"
 ---
 
-Aruju pariyar is originally from Hetauda, and now lives in Lalitpur. He completed his Bachelor's degree in Engineering from Nepal College of Information Technology. He has experience working professionally as a network engineer, but was looking to make a career change to Software Engineering which brought him to TEJ Fellowship. In his free time he enjoys playing guitar, as he loves music. He is also adept at handling impromptu and urgent client questions.
+I am Aarju Pariyar, currently pursuing a Bachelor's degree in Business Studies from Sukuna Multiple Campus, Tribhuvan University. I am interested in technology and have recently discovered a passion for programming. Despite not having a technical background, I aspire to become a skilled Software Engineer.
+Apart from programming, I enjoy cooking, learning new recipes, and listening to music. I am also fond of traveling and exploring new places.
