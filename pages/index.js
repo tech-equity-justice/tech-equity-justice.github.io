@@ -6,18 +6,20 @@ import HowWeWork from "../components/howWeWork";
 import ShowMembers from "../components/showMembers";
 import { getSortedMembersData } from "../lib/getMembers";
 import MailChimp from "../components/mailChimp";
-import MemberCard from "../components/memberCard";
 import MemberCardDetails from "../components/memberCardDetails";
 
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
   const allAdvisoryMembersData = getSortedMembersData("advisory");
-  const allFellows2022 = getSortedMembersData("fellows-2022");
+  const allFellows2023 = getSortedMembersData("fellows-2023");
+  const teachingFellow = getSortedMembersData("teaching-fellow-2023");
+
   return {
     props: {
       allBoardMembersData,
       allAdvisoryMembersData,
-      allFellows2022,
+      allFellows2023,
+      teachingFellow,
     },
   };
 }
@@ -25,7 +27,8 @@ export async function getStaticProps() {
 export default function Home(props) {
   let allBoardMembersData = props.allBoardMembersData;
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
-  let allFellows2022 = props.allFellows2022;
+  let allFellows2023 = props.allFellows2023;
+  let teachingFellow = props.teachingFellow;
   return (
     <Layout>
       {/* <!-- Blob --> */}
@@ -39,9 +42,15 @@ export default function Home(props) {
         <HowWeWork />
         <div className="wrapper">
           <ShowMembers
-            members={allFellows2022}
-            title="2022 TEJ Fellows"
-            tagID="fellows-2022"
+            members={allFellows2023}
+            title="2023 TEJ Fellows"
+            tagID="fellows-current"
+            Component={MemberCardDetails}
+          />
+          <ShowMembers
+            members={teachingFellow}
+            title="Teaching Fellows"
+            tagID="teaching-fellow-2023"
             Component={MemberCardDetails}
           />
           <ShowMembers

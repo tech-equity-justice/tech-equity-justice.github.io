@@ -4,7 +4,7 @@ export default function Modal() {
   const [modalVisibility, setModalVisibility] = useState("none");
 
   //show modal or not
-  const showModal = false;
+  const showModal = true;
 
   //1. variables
   //1.1 constants
@@ -83,18 +83,16 @@ export default function Modal() {
           &#x4d;
         </span>
         <div className="region-lg wrapper align-center">
-          <h1>TEJ Fellowship Application</h1>
-          <h1>Open till March 19 2023!</h1>
+          <h1>Congratulations to</h1>
+          <h1>the 2023 TEJ Fellows</h1>
           <div className="region-top-md">
             <a
-              href="https://forms.gle/tP3vtW6UyhTuud83A"
+              href="#fellows-current"
               className="button-lg fire-button display-block display-inline-sm"
               id="modal-button"
               onClick={closeDisplay}
-              target="_blank"
-              rel="noreferrer"
             >
-              APPLY NOW
+              MEET THE NEW CLASS
             </a>
           </div>
         </div>

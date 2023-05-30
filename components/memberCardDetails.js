@@ -4,10 +4,12 @@ export default function MemberCardDetails({ member }) {
   const startHeight = "7.2em";
   const [height, setHeight] = useState(startHeight);
   const [buttonDisplay, setButtonDisplay] = useState("Read more");
+  const [designationDisplay, setDesignationDisplay] = useState(true);
 
   const toggleDisplay = () => {
     setHeight(height === startHeight ? "auto" : startHeight);
     setButtonDisplay(buttonDisplay === "Read more" ? "Read less" : "Read more");
+    setDesignationDisplay(designationDisplay);
   };
 
   return (

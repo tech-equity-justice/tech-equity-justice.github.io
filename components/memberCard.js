@@ -12,7 +12,7 @@ export default function MemberCard({ member }) {
             href={member.linkedIn}
             className="body1"
           >
-            {member.name}
+            <h3>{member.name}</h3>
           </a>
         </div>
       </div>

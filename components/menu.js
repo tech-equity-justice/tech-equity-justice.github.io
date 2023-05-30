@@ -1,6 +1,17 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Menu() {
+  const router = useRouter();
+
+  const handleBatchClick = (menuItem) => {
+    if (menuItem === "fellows-2022") {
+      router.push("/fellows-2022");
+    } else {
+      router.push(`/#${menuItem}`);
+    }
+  };
+
   return (
     /* Navbar */
     <nav className="region-sm flex-start-md">
@@ -15,15 +26,36 @@ export default function Menu() {
           </Link>
         </div>
         <div className="flex flex-start-md flex-center">
-          <a href="#about" className="body2-bold">
+          <a className="body2-bold" onClick={() => handleBatchClick("about")}>
             About us
           </a>
-          <a href="#team" className="body2-bold">
+          <a className="body2-bold" onClick={() => handleBatchClick("team")}>
             Our team
           </a>
-          <a href="#fellows-2022" className="body2-bold">
-            Our Fellows
-          </a>
+
+          <div className="navbar-fellow">
+            <button className="body2-bold">
+              Our fellows<i className="fa fa-caret-down"></i>
+            </button>
+            <div className="dropdown-content">
+              <div className="cohort-container">
+                <a
+                  onClick={() => handleBatchClick("fellows-current")}
+                  className="body2-bold"
+                >
+                  Current Fellows
+                </a>
+
+                <a
+                  onClick={() => handleBatchClick("fellows-2022")}
+                  className="body2-bold"
+                >
+                  2022 Fellows
+                </a>
+              </div>
+            </div>
+          </div>
+
           <a href="#contact" className="body2-bold fire-button">
             Contact us
           </a>
