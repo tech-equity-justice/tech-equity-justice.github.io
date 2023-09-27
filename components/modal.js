@@ -4,7 +4,7 @@ export default function Modal() {
   const [modalVisibility, setModalVisibility] = useState("none");
 
   //show modal or not
-  const showModal = true;
+  const showModal = false;
 
   //1. variables
   //1.1 constants
