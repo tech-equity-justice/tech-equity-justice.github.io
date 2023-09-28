@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 export default function MemberCardDetails({ member }) {
   const startHeight = "7.2em";
@@ -15,7 +16,7 @@ export default function MemberCardDetails({ member }) {
   return (
     <div className="team_member">
       <div className="member_img">
-        <img src={member.photo} alt="our_team" />
+        <Image src={member.photo} alt="our_team" width={300} height={300} />
       </div>
       {member.linkedIn !== "" ? (
         <a target="_blank" rel="noreferrer" href={member.linkedIn}>
