@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 export default function Menu() {
@@ -18,10 +19,12 @@ export default function Menu() {
       <div className="split-pair wrapper flex-center">
         <div className="logo">
           <Link href="/">
-            <img
+            <Image
               src="/images/logos/TEJ-main-lg.png"
               alt="TEJ Fellowship logo"
               className="nav-logo"
+              width={72}
+              height={61.563}
             />
           </Link>
         </div>
