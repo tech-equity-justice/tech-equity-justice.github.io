@@ -4,15 +4,15 @@ import { useRouter } from "next/router";
 
 export default function Menu() {
   const router = useRouter();
-
   const handleBatchClick = (menuItem) => {
     if (menuItem === "fellows-2022") {
       router.push("/fellows-2022");
+    } else if (menuItem === "fellows-2023") {
+      router.push("/fellows-2023");
     } else {
       router.push(`/#${menuItem}`);
     }
   };
-
   return (
     /* Navbar */
     <nav className="region-sm flex-start-md">
@@ -35,7 +35,6 @@ export default function Menu() {
           <a className="body2-bold" onClick={() => handleBatchClick("team")}>
             Our team
           </a>
-
           <div className="navbar-fellow">
             <button className="body2-bold">
               Our fellows<i className="fa fa-caret-down"></i>
@@ -43,12 +42,17 @@ export default function Menu() {
             <div className="dropdown-content">
               <div className="cohort-container">
                 <a
-                  onClick={() => handleBatchClick("fellows-current")}
+                  onClick={() => handleBatchClick("pbc-202401")}
                   className="body2-bold"
                 >
-                  Current Fellows
+                  Current PBC Fellows
                 </a>
-
+                <a
+                  onClick={() => handleBatchClick("fellows-2023")}
+                  className="body2-bold"
+                >
+                  2023 Fellows
+                </a>
                 <a
                   onClick={() => handleBatchClick("fellows-2022")}
                   className="body2-bold"
@@ -58,7 +62,6 @@ export default function Menu() {
               </div>
             </div>
           </div>
-
           <a href="#contact" className="body2-bold fire-button">
             Contact us
           </a>
