@@ -17,17 +17,14 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex gap-small">
-          <a href="https://www.instagram.com/tejfellowship/" target="_blank">
-            <Image width={22} height={22} src={"/images/social/insta.svg"} />
-          </a>
-          <a href="https://www.facebook.com/TEJ.fellowship" target="_blank">
-            <Image width={24} height={24} src={"/images/social/facebook.svg"} />
-          </a>
           <a
             href="https://www.linkedin.com/company/tej-fellowship/"
             target="_blank"
           >
             <Image width={25} height={25} src={"/images/social/linkedin.svg"} />
+          </a>
+          <a href="https://www.facebook.com/TEJ.fellowship" target="_blank">
+            <Image width={24} height={24} src={"/images/social/facebook.svg"} />
           </a>
           <p className="body2-bold">
             <a href="mailto:tej.fellowship@gmail.com">

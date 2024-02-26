@@ -22,14 +22,13 @@ export default function ContactUs() {
               <div className="flex gap-small">
                 <p>Follow us: </p>
                 <a
-                  href="https://www.instagram.com/tejfellowship/"
+                  href="https://www.linkedin.com/company/tej-fellowship/"
                   target="_blank"
                 >
-                  {" "}
                   <Image
-                    width={22}
-                    height={22}
-                    src={"/images/social/insta.svg"}
+                    width={24}
+                    height={24}
+                    src={"/images/social/linkedin.svg"}
                   />
                 </a>
                 <a
@@ -40,16 +39,6 @@ export default function ContactUs() {
                     width={24}
                     height={24}
                     src={"/images/social/facebook.svg"}
-                  />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/tej-fellowship/"
-                  target="_blank"
-                >
-                  <Image
-                    width={24}
-                    height={24}
-                    src={"/images/social/linkedin.svg"}
                   />
                 </a>
               </div>

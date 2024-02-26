@@ -6,7 +6,6 @@ import HowWeWork from "../components/howWeWork";
 import ShowMembers from "../components/showMembers";
 import { getSortedMembersData } from "../lib/getMembers";
 import ContactUs from "../components/contactUs";
-import MailChimp from "../components/mailChimp";
 import MemberCardDetails from "../components/memberCardDetails";
 
 export async function getStaticProps() {
