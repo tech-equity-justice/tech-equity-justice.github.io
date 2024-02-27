@@ -26,9 +26,10 @@ export default function ContactUs() {
                   target="_blank"
                 >
                   <Image
+                    src={"/images/social/linkedin.svg"}
                     width={24}
                     height={24}
-                    src={"/images/social/linkedin.svg"}
+                    alt="linkedin"
                   />
                 </a>
                 <a
@@ -36,9 +37,10 @@ export default function ContactUs() {
                   target="_blank"
                 >
                   <Image
+                    src={"/images/social/facebook.svg"}
                     width={24}
                     height={24}
-                    src={"/images/social/facebook.svg"}
+                    alt="facebook"
                   />
                 </a>
               </div>
