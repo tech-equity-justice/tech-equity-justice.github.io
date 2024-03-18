@@ -1,23 +1,5 @@
 const rawHTML = `
 <!-- Mailchimp Form -->
-<div class="dark-block" id="contact">
-  <div class="wrapper flow-xlg">
-    <div class="grid grid-2up">
-      <div>
-        <p class="h2">CONTACT US</p>
-        <div class="region-sm">
-          <p class="h4 padding-bottom-1" data-variant="no-padding">
-            If you are interested in TEJ Fellowship, please tell us about
-            yourself and we will get in touch with you.
-          </p>
-          <p class="padding-bottom-1" data-variant="no-padding">
-            For any other communications, please contact us by email at
-            <a href="mailto:tej.fellowship@gmail.com"
-              >tej.fellowship@gmail.com</a
-            >
-          </p>
-        </div>
-      </div>
       <div class="light-block">
         <!-- Begin Mailchimp Signup Form -->
         <link
@@ -305,9 +287,6 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
         </script>
         <!--End mc_embed_signup-->
       </div>
-    </div>
-  </div>
-</div>
 <!-- Mailchimp Form end -->
 `;
 
