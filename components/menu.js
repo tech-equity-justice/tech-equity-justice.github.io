@@ -35,26 +35,35 @@ export default function Menu() {
           <a className="body2-bold" onClick={() => handleBatchClick("team")}>
             Our team
           </a>
-
           <div className="navbar-fellow">
             <button className="body2-bold">
               Our fellows<i className="fa fa-caret-down"></i>
             </button>
             <div className="dropdown-content">
               <div className="cohort-container">
-                <a
-                  onClick={() => handleBatchClick("fellows-current")}
-                  className="body2-bold"
-                >
-                  Current Fellows
+                <a className="body2-bold pre-bootcamp">
+                  Pre Bootcamp <i className="fa fa-caret-right rotate"></i>
                 </a>
-
-                <a
-                  onClick={() => handleBatchClick("fellows-2022")}
-                  className="body2-bold"
-                >
-                  2022 Fellows
+                <div className="sub-menu">
+                  <a className="body2-bold">PBC Fellows</a>
+                </div>
+                <a className="body2-bold bootcamp">
+                  Bootcamp <i className="fa fa-caret-right rotate"></i>
                 </a>
+                <div className="sub-menu">
+                  <a
+                    onClick={() => handleBatchClick("fellows-current")}
+                    className="body2-bold"
+                  >
+                    2023 Fellows
+                  </a>
+                  <a
+                    onClick={() => handleBatchClick("fellows-2022")}
+                    className="body2-bold"
+                  >
+                    2022 Fellows
+                  </a>
+                </div>
               </div>
             </div>
           </div>
