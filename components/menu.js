@@ -5,11 +5,7 @@ import { useRouter } from "next/router";
 export default function Menu() {
   const router = useRouter();
   const handleBatchClick = (menuItem) => {
-    if (menuItem === "pbc-202401") {
-      router.push("pbc-202401");
-    } else {
-      router.push(`/${menuItem}`);
-    }
+    router.push(`/${menuItem}`);
   };
   return (
     /* Navbar */
@@ -27,10 +23,10 @@ export default function Menu() {
           </Link>
         </div>
         <div className="flex flex-start-md flex-center">
-          <a className="body2-bold" onClick={() => handleBatchClick("about")}>
+          <a className="body2-bold" onClick={() => handleBatchClick("#about")}>
             About us
           </a>
-          <a className="body2-bold" onClick={() => handleBatchClick("team")}>
+          <a className="body2-bold" onClick={() => handleBatchClick("#team")}>
             Our team
           </a>
           <div className="navbar-fellow">
