@@ -5,12 +5,10 @@ import { useRouter } from "next/router";
 export default function Menu() {
   const router = useRouter();
   const handleBatchClick = (menuItem) => {
-    if (menuItem === "fellows-2022") {
-      router.push("/fellows-2022");
-    } else if (menuItem === "fellows-2023") {
-      router.push("/fellows-2023");
+    if (menuItem === "pbc-202401") {
+      router.push("pbc-202401");
     } else {
-      router.push(`/#${menuItem}`);
+      router.push(`/${menuItem}`);
     }
   };
   return (
@@ -47,7 +45,7 @@ export default function Menu() {
                 <div className="sub-menu">
                   <a
                     className="body2-bold"
-                    onClick={() => handleBatchClick("pbc-202401")}
+                    onClick={() => handleBatchClick("#pbc-202401")}
                   >
                     PBC Fellows
                   </a>
