@@ -4,15 +4,9 @@ import { useRouter } from "next/router";
 
 export default function Menu() {
   const router = useRouter();
-
   const handleBatchClick = (menuItem) => {
-    if (menuItem === "fellows-2022") {
-      router.push("/fellows-2022");
-    } else {
-      router.push(`/#${menuItem}`);
-    }
+    router.push(`/${menuItem}`);
   };
-
   return (
     /* Navbar */
     <nav className="region-sm flex-start-md">
@@ -29,10 +23,10 @@ export default function Menu() {
           </Link>
         </div>
         <div className="flex flex-start-md flex-center">
-          <a className="body2-bold" onClick={() => handleBatchClick("about")}>
+          <a className="body2-bold" onClick={() => handleBatchClick("#about")}>
             About us
           </a>
-          <a className="body2-bold" onClick={() => handleBatchClick("team")}>
+          <a className="body2-bold" onClick={() => handleBatchClick("#team")}>
             Our team
           </a>
           <div className="navbar-fellow">
@@ -45,14 +39,19 @@ export default function Menu() {
                   Pre Bootcamp <i className="fa fa-caret-right rotate"></i>
                 </a>
                 <div className="sub-menu">
-                  <a className="body2-bold">PBC Fellows</a>
+                  <a
+                    className="body2-bold"
+                    onClick={() => handleBatchClick("#pbc-202401")}
+                  >
+                    PBC Fellows
+                  </a>
                 </div>
                 <a className="body2-bold bootcamp">
                   Bootcamp <i className="fa fa-caret-right rotate"></i>
                 </a>
                 <div className="sub-menu">
                   <a
-                    onClick={() => handleBatchClick("fellows-current")}
+                    onClick={() => handleBatchClick("fellows-2023")}
                     className="body2-bold"
                   >
                     2023 Fellows

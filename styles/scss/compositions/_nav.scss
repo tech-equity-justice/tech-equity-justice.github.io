@@ -24,6 +24,7 @@ nav {
       border: none;
       background-color: $light-color;
       cursor: pointer;
+      cursor: pointer;
       font-size: 1.25rem;
       i {
         margin-left: 15px;
@@ -33,6 +34,7 @@ nav {
         color: $primary-color;
       }
     }
+
     .dropdown-content {
       display: none;
       position: absolute;
@@ -52,6 +54,7 @@ nav {
         border: 4px solid transparent;
         border-top-color: $primary-color;
       }
+
       a {
         float: none;
         color: black;
@@ -115,6 +118,7 @@ nav {
         }
       }
     }
+
     &:hover .dropdown-content {
       display: block;
       .cohort-container .body2-bold.pre-bootcamp:hover + .sub-menu,

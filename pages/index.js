@@ -3,6 +3,7 @@ import Hero from "../components/hero";
 import Eligibility from "../components/eligibility";
 import AboutUs from "../components/aboutUs";
 import HowWeWork from "../components/howWeWork";
+import AboutPBC from "../components/aboutPBC";
 import ShowMembers from "../components/showMembers";
 import { getSortedMembersData } from "../lib/getMembers";
 import ContactUs from "../components/contactUs";
@@ -11,15 +12,13 @@ import MemberCardDetails from "../components/memberCardDetails";
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
   const allAdvisoryMembersData = getSortedMembersData("advisory");
-  const allFellows2023 = getSortedMembersData("fellows-2023");
-  const teachingFellow = getSortedMembersData("teaching-fellow-2023");
+  const firstPBC = getSortedMembersData("pbc-202401");
 
   return {
     props: {
       allBoardMembersData,
       allAdvisoryMembersData,
-      allFellows2023,
-      teachingFellow,
+      firstPBC,
     },
   };
 }
@@ -27,8 +26,7 @@ export async function getStaticProps() {
 export default function Home(props) {
   let allBoardMembersData = props.allBoardMembersData;
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
-  let allFellows2023 = props.allFellows2023;
-  let teachingFellow = props.teachingFellow;
+  let firstPBC = props.firstPBC;
   return (
     <Layout>
       {/* <!-- Blob --> */}
@@ -40,17 +38,12 @@ export default function Home(props) {
         <Eligibility />
         <AboutUs />
         <HowWeWork />
+        <AboutPBC />
         <div className="wrapper">
           <ShowMembers
-            members={allFellows2023}
-            title="2023 TEJ Fellows"
-            tagID="fellows-current"
-            Component={MemberCardDetails}
-          />
-          <ShowMembers
-            members={teachingFellow}
-            title="Teaching Fellows"
-            tagID="teaching-fellow-2023"
+            members={firstPBC}
+            title="CURRENT TEJ PBC FELLOWS"
+            tagID="pbc-202401"
             Component={MemberCardDetails}
           />
           <ShowMembers
