@@ -1,4 +1,4 @@
-import storyCardDetail from "./storyCardDetail";
+import StoryCardDetails from "./storyCardDetails";
 
 // Component takes another component as argument
 // in the 'Component' parameter
@@ -9,7 +9,7 @@ export default function ShowStories({
   members,
   title,
   tagID,
-  Component = storyCardDetail,
+  Component = StoryCardDetails,
 }) {
   return (
     <>
