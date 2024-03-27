@@ -8,17 +8,20 @@ import ShowMembers from "../components/showMembers";
 import { getSortedMembersData } from "../lib/getMembers";
 import ContactUs from "../components/contactUs";
 import MemberCardDetails from "../components/memberCardDetails";
+import ShowStories from "../components/showStories";
 
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
   const allAdvisoryMembersData = getSortedMembersData("advisory");
   const firstPBC = getSortedMembersData("pbc-202401");
+  const successStories = getSortedMembersData("success-stories");
 
   return {
     props: {
       allBoardMembersData,
       allAdvisoryMembersData,
       firstPBC,
+      successStories,
     },
   };
 }
@@ -27,6 +30,7 @@ export default function Home(props) {
   let allBoardMembersData = props.allBoardMembersData;
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
   let firstPBC = props.firstPBC;
+  let successStories = props.successStories;
   return (
     <Layout>
       {/* <!-- Blob --> */}
@@ -55,6 +59,12 @@ export default function Home(props) {
           <ShowMembers
             members={allAdvisoryMembersData}
             title="ADVISORY GROUP"
+            Component={MemberCardDetails}
+          />
+          <ShowStories
+            members={successStories}
+            title="SUCCESS STORIES"
+            tagID="alumni-story"
             Component={MemberCardDetails}
           />
         </div>
