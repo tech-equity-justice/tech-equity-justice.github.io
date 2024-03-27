@@ -68,7 +68,7 @@ export default function Menu() {
           </div>
           <a
             className="body2-bold"
-            onClick={() => handleBatchClick("alumni-story")}
+            onClick={() => handleBatchClick("#alumni-story")}
           >
             Success stories
           </a>
