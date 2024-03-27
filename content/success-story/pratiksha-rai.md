@@ -1,6 +1,8 @@
 ---
 name: "Pratiksha Rai"
 linkedIn: ""
+title: "Associate Software Engineer"
+company: "Rumsan"
 photo: "/images/fellows/2022/pratiksha-rai.jpg"
 ---
 

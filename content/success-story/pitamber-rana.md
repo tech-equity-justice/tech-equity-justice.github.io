@@ -1,6 +1,8 @@
 ---
 name: "Pitamber Rana"
 linkedIn: ""
+title: "Associate Software Engineer"
+company: "Fusemachines"
 photo: "/images/fellows/2022/pitamber-rana.jpg"
 ---
 

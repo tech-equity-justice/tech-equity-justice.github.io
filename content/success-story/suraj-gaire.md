@@ -1,6 +1,8 @@
 ---
 name: "Suraj Gaire"
 linkedIn: "https://www.linkedin.com/in/gairesuraj/"
+title: "Software Engineer"
+company: "Rhombuz"
 photo: "/images/fellows/2022/suraj-gaire.jpg"
 ---
 
