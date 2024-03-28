@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o dist",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "gh": "next build && git add dist -f && git commit -m 'gh-pages first commit!' && git push origin `git subtree split --prefix dist main`:gh-pages --force && git reset --hard HEAD~1"
