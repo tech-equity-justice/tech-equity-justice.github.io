@@ -47,7 +47,7 @@ export default function OurPrograms() {
             <p className="region-tn body2">
               The pre-bootcamp fellows are selected through an application
               process. The program has a weekly rhythm, where we introduce a new
-              programming concept each week that builds on previous weeks'
+              programming concept each week that builds on previous weeks&apos;
               lessons. The knowledge is further explored by doing the assigned
               exercises, with additional help provided via an online community
               and office hours.
