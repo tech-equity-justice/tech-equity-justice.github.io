@@ -35,14 +35,14 @@ export default function OurPrograms() {
             <p className="region-tn body2">
               At TEJ, recognizing the gender disparity in the technology sector
               and learning from our own experience in difficulties faced by
-              women in learning technology, we have designed a 3-month part-time
-              Introduction to JavaScript Pre Bootcamp specifically for women
-              from marginalized and underrepresented communities. This is a free
-              program with five hours per week in-class, and an additional
-              commitment of 10-15hrs per week to do the workshops and exercises.
-              The fellows will be trained from little or no coding experience to
-              a having solid foundation in programming fundamentals with a focus
-              on JavaScript.
+              women in learning technology, we have designed a three-month
+              part-time Introduction to JavaScript Pre Bootcamp specifically for
+              women from marginalized and underrepresented communities. This is
+              a free program with five hours per week in-class, and an
+              additional commitment of 10-15hrs per week to do the workshops and
+              exercises. The fellows will be trained from little or no coding
+              experience to a having solid foundation in programming
+              fundamentals with a focus on JavaScript.
             </p>
             <p className="region-tn body2">
               The pre-bootcamp fellows are selected through an application
