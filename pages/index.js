@@ -2,8 +2,6 @@ import Layout from "../components/layout";
 import Hero from "../components/hero";
 import Eligibility from "../components/eligibility";
 import AboutUs from "../components/aboutUs";
-import HowWeWork from "../components/howWeWork";
-import AboutPBC from "../components/aboutPBC";
 import ShowMembers from "../components/showMembers";
 import { getSortedMembersData } from "../lib/getMembers";
 import ContactUs from "../components/contactUs";
@@ -37,10 +35,8 @@ export default function Home(props) {
       <div className="flow-xlg">
         <Hero />
         <OurPrograms />
-        <Eligibility />
         <AboutUs />
-        <HowWeWork />
-        <AboutPBC />
+        <Eligibility />
         <div className="wrapper">
           <ShowMembers
             members={firstPBC}
