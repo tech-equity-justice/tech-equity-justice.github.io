@@ -37,10 +37,8 @@ export default function Home(props) {
       <div className="flow-xlg">
         <Hero />
         <OurPrograms />
-        <Eligibility />
         <AboutUs />
-        <HowWeWork />
-        <AboutPBC />
+        <Eligibility />
         <div className="wrapper">
           <ShowMembers
             members={firstPBC}
