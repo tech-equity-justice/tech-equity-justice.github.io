@@ -10,47 +10,47 @@ export default function OurPrograms() {
           <div>
             <p className="h5">BOOTCAMP</p>
             <p className="region-tn body2">
-              Technology for Equity and Justice (TEJ), a US based organization,
-              has developed a nine month coding fellowship for students from
-              marginalized and underrepresented communities. The fellows will be
-              trained from little or no coding knowledge to fully capable
-              software engineers earning competitive salaries. Fellows will be
-              paid a stipend of Rs. 15,000.00 a month throughout the program.
+              Technology for Equity and Justice (TEJ) has developed a nine-month
+              coding fellowship for students from marginalized and
+              underrepresented communities. The fellows will be trained from
+              little or no coding knowledge to fully capable software engineers
+              earning competitive salaries. Fellows will be paid a stipend of
+              Rs. 16,000.00 a month throughout the program.
             </p>
             <p className="region-tn body2">
               The TEJ Fellows are selected following a rigorous selection
               process. The nine month fellowship is conducted in two phases: I)
-              The Software Engineering Bootcamp phase is an in-house six-month
-              full time bootcamp training program teaching javascript language
-              frontend and backend skills. The training is facilitated by highly
-              experienced IT Engineers with work experience in the United States
-              and Nepal. II) The internship phase is focused on putting
-              technical training to practical use. It includes soft skills
-              training in communications and job search skills to find and grow
-              in good jobs in Nepal and international companies.
+              The Coding Bootcamp phase is an in-person six-month full-time
+              training where we teach JavaScript language for frontend and
+              backend. The training is facilitated by highly experienced IT
+              Engineers with work experience in the United States and Nepal. II)
+              The Internship phase is focused on putting technical training to
+              practical use. It includes soft skills training in communications
+              and job search skills to find and grow in good jobs in Nepali and
+              international companies.
             </p>
           </div>
           <div>
             <p className="h5">PRE BOOTCAMP</p>
             <p className="region-tn body2">
-              The technology industry has constantly faced a shortage of good
-              software engineers. As the supply of computer engineering
-              graduates has not been able to meet the demand, the last 10 years
-              has seen the emergence of coding bootcamps in North America and
-              Europe that are conducted in terms of six months or less. The
-              bootcamp has proven to be a successful model, and employers now
-              recruit from them just as they do from universities. These coding
-              bootcamps provide unmatched return on investment as they prepare
-              students for jobs in a short period.
+              At TEJ, recognizing the gender disparity in the technology sector
+              and learning from our own experience in difficulties faced by
+              women in learning technology, we have designed a 3-month part-time
+              Introduction to JavaScript Pre Bootcamp specifically for women
+              from marginalized and underrepresented communities. This is a free
+              program with five hours per week in-class, and an additional
+              commitment of 10-15hrs per week to do the workshops and exercises.
+              The fellows will be trained from little or no coding experience to
+              a having solid foundation in programming fundamentals with a focus
+              on JavaScript.
             </p>
             <p className="region-tn body2">
-              In Nepal, the representation of historically marginalized
-              communities in the technology sector has been dramatically lower
-              than those from privileged class and caste groups due to
-              structural barriers, including a lack of access to information and
-              resources. To address this issue and close the gap, TEJ has
-              created a nine month coding fellowship designed to ensure the
-              success of students from underrepresented groups and communities.
+              The pre-bootcamp fellows are selected through an application
+              process. The program has a weekly rhythm, where we introduce a new
+              programming concept each week that builds on previous weeks'
+              lessons. The knowledge is further explored by doing the assigned
+              exercises, with additional help provided via an online community
+              and office hours.
             </p>
           </div>
         </div>
