@@ -8,6 +8,7 @@ import ShowMembers from "../components/showMembers";
 import { getSortedMembersData } from "../lib/getMembers";
 import ContactUs from "../components/contactUs";
 import MemberCardDetails from "../components/memberCardDetails";
+import OurPrograms from "../components/ourPrograms";
 
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
@@ -35,6 +36,7 @@ export default function Home(props) {
 
       <div className="flow-xlg">
         <Hero />
+        <OurPrograms />
         <Eligibility />
         <AboutUs />
         <HowWeWork />
