@@ -11,6 +11,9 @@ export default function StoryCardDetails({ member }) {
           <div>{member.name}</div>
           <div>{member.title}</div>
           <div>{member.company}</div>
+          <div>
+            <Image src={member.logo} alt="" width={90} height={40} />
+          </div>
         </div>
         <div>
           <Image
