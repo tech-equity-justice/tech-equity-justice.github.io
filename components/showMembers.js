@@ -1,4 +1,4 @@
-import MemberCardDetails from "../components/memberCardDetails";
+import MemberCardDetails from "./memberCardDetails";
 
 // Component takes another component as argument
 // in the 'Component' parameter
