@@ -1,18 +1,17 @@
 /*Custom Css for success_card*/
 .success_card {
-  border: solid 0.1rem lightgray;
   border-radius: 12px;
-  padding: 32px;
+  padding: 2rem 2rem 1rem 2rem;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
+  transition: all 0.23s ease-in-out 0s;
   .alumni_card {
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: space-between;
     gap: 16px;
-    
     .alumni_image {
       img {
         object-fit: cover;
-
         border-radius: 50%;
         background-color: black;
         display: block;
@@ -40,4 +39,26 @@
       }
     }
   }
+  .alumni_content {
+    font-family: $secondary-font;
+    font-size: 1rem;
+    padding:0rem 0.875rem 1rem;
+    line-height: 1.2;
+    border-bottom: solid 0.1rem $Fire;
+    overflow: hidden;
+  }
+  .content_detail {
+    font-family: $secondary-font;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.875rem;
+    cursor: pointer;
+  }
+  &:hover .content_detail {
+    color: #f0564e;
+    transform: scale(1);
+  }
+}
+.success_card:hover {
+  box-shadow: 1px 1px 20px 15px rgb(0 0 0 / 5%);
 }

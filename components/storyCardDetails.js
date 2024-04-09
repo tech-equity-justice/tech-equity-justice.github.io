@@ -1,6 +1,18 @@
+import { useState } from "react";
 import Image from "next/image";
 
 export default function StoryCardDetails({ member }) {
+  // const startHeight = "7.2em";
+  // const [height, setHeight] = useState(startHeight);
+  const [buttonDisplay, setButtonDisplay] = useState("Read more");
+  const [designationDisplay, setDesignationDisplay] = useState(false);
+
+  const toggleDisplay = () => {
+    // setHeight(height === startHeight ? "" : startHeight);
+    setButtonDisplay(buttonDisplay === "Read more" ? "" : "Read more");
+    setDesignationDisplay(designationDisplay);
+  };
+
   return (
     <div className="success_card">
       <div className="alumni_card">
@@ -22,8 +34,16 @@ export default function StoryCardDetails({ member }) {
           </div>
         </div>
       </div>
-      <div>{member.content}</div>
-      <div>Read more</div>
+      {member.content !== "" && (
+        <>
+          <p className="alumni_content" style={{ height: "8em" }}>
+            <span dangerouslySetInnerHTML={{ __html: member.content }} />
+          </p>
+          <div className="content_detail" onClick={toggleDisplay}>
+            {buttonDisplay}
+          </div>
+        </>
+      )}
     </div>
   );
 }
