@@ -1,6 +1,6 @@
 ---
 name: "Raju Lama"
-linkedIn: ""
+linkedIn: "https://www.linkedin.com/in/raju-lama-7115b8200/"
 photo: "/images/fellows/2022/raju-lama.jpg"
 title: "Associate Software Engineer"
 company: "Fusemachines"

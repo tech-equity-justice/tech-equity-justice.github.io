@@ -23,7 +23,15 @@ export default function StoryCardDetails({ member }) {
         </div>
         <div className="alumni_info">
           <div className="info_font">
-            <h3>{member.name}</h3>
+            {member.linkedIn !== "" ? (
+              <a target="_blank" rel="noreferrer" href={member.linkedIn}>
+                <h3>{member.name}</h3>
+              </a>
+            ) : (
+              <a>
+                <h3>{member.name}</h3>
+              </a>
+            )}
             <p>{member.title}</p>
           </div>
           <div className="company_logo">

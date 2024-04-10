@@ -1,6 +1,6 @@
 ---
 name: "Amir Thapa"
-linkedIn: ""
+linkedIn: "https://www.linkedin.com/in/amir-thapa-42a8961b5/"
 photo: "/images/fellows/2022/amir-thapa.jpg"
 title: "Associate Software Engineer"
 company: "Fusemachines"
