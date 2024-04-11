@@ -35,7 +35,14 @@ export default function StoryCardDetails({ member }) {
             <p>{member.title}</p>
           </div>
           <div className="company_logo">
-            <Image src={member.logo} alt={member.logo} width={90} height={50} />
+            <a target="_blank" href={member.company_logo}>
+              <Image
+                src={member.logo}
+                alt={member.logo}
+                width={120}
+                height={40}
+              />
+            </a>
           </div>
         </div>
       </div>

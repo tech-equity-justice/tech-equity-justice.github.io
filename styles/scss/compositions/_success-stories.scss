@@ -24,7 +24,7 @@
         text-decoration: none;
         color: $Fire;
         text-transform: uppercase;
-      h3 {
+        h3 {
           font-size: 18px;
           line-height: 18px;
           letter-spacing: 2px;
@@ -39,8 +39,13 @@
         font-size: 16px;
         line-height: 1.2;
       }
-      .company_logo img {
-        object-fit: contain;
+      .company_logo {
+        a {
+          img {
+            object-fit: contain;
+            object-position: 0% 30%;
+          }
+        }
       }
     }
   }
