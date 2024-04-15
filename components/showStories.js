@@ -16,10 +16,12 @@ export default function ShowStories({
       <div id={tagID && tagID}>
         <p className="h2">{title}</p>
       </div>
-      <div className="card-container grid grid-3up">
-        {members.map((member) => (
-          <Component member={member} key={member.id} />
-        ))}
+      <div className="card-container">
+        <div className="card-wrapper">
+          {members.map((member) => (
+            <Component member={member} key={member.id} />
+          ))}
+        </div>
       </div>
     </>
   );
