@@ -1,12 +1,13 @@
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function StoryCardDetails({ member }) {
   const [buttonDisplay, setButtonDisplay] = useState("Read more");
   const [designationDisplay, setDesignationDisplay] = useState(false);
 
   const toggleDisplay = () => {
-    setButtonDisplay(buttonDisplay === "Read more" ? "" : "Read more");
+    setButtonDisplay(buttonDisplay === "Read more" ? "Read more" : "");
     setDesignationDisplay(designationDisplay);
   };
 
@@ -52,7 +53,9 @@ export default function StoryCardDetails({ member }) {
             <span dangerouslySetInnerHTML={{ __html: member.content }} />
           </p>
           <div className="content_detail" onClick={toggleDisplay}>
-            {buttonDisplay}
+            <Link href={`memberStoryDetails?id=${member.id}`} target="_blank">
+              {buttonDisplay}
+            </Link>
           </div>
         </>
       )}
