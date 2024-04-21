@@ -27,7 +27,6 @@
       img {
         object-fit: cover;
         border-radius: 50%;
-        background-color: black;
         display: block;
       }
     }
@@ -75,11 +74,14 @@
     font-size: 1rem;
     font-weight: bold;
     border-top: solid 0.1rem $Fire;
-    margin: 0.875rem;
-    padding: 10px 0px 0px;
+    margin: 0.875rem 0.875rem 0.5rem;
+    padding: 15px 0px 0px;
     cursor: pointer;
+    a {
+      text-decoration: none;
+    }
   }
-  &:hover .content_detail {
+  &:hover .content_detail a {
     color: #f0564e;
     transform: scale(1);
   }
