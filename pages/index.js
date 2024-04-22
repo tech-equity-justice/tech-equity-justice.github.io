@@ -2,14 +2,13 @@ import Layout from "../components/layout";
 import Hero from "../components/hero";
 import Eligibility from "../components/eligibility";
 import AboutUs from "../components/aboutUs";
-import HowWeWork from "../components/howWeWork";
-import AboutPBC from "../components/aboutPBC";
 import ShowMembers from "../components/showMembers";
 import { getSortedMembersData } from "../lib/getMembers";
 import ContactUs from "../components/contactUs";
 import MemberCardDetails from "../components/memberCardDetails";
 import ShowStories from "../components/showStories";
 import StoryCardDetails from "../components/storyCardDetails";
+import OurPrograms from "../components/ourPrograms";
 
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
@@ -40,14 +39,13 @@ export default function Home(props) {
 
       <div className="flow-xlg">
         <Hero />
-        <Eligibility />
+        <OurPrograms />
         <AboutUs />
-        <HowWeWork />
-        <AboutPBC />
+        <Eligibility />
         <div className="wrapper">
           <ShowMembers
             members={firstPBC}
-            title="CURRENT TEJ PBC FELLOWS"
+            title="PRE-B00TCAMP FELLOWS (202401)"
             tagID="pbc-202401"
             Component={MemberCardDetails}
           />
