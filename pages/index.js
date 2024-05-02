@@ -7,7 +7,6 @@ import { getSortedMembersData } from "../lib/getMembers";
 import ContactUs from "../components/contactUs";
 import MemberCardDetails from "../components/memberCardDetails";
 import ShowStories from "../components/showStories";
-import StoryCardDetails from "../components/storyCardDetails";
 import OurPrograms from "../components/ourPrograms";
 
 export async function getStaticProps() {
@@ -64,7 +63,6 @@ export default function Home(props) {
             members={successStories}
             title="SUCCESS STORIES"
             tagID="alumni-story"
-            Component={StoryCardDetails}
           />
         </div>
         <ContactUs />

@@ -1,16 +1,5 @@
-import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-
 export default function StoryCardDetails({ member }) {
-  const [buttonDisplay, setButtonDisplay] = useState("Read more");
-  const [designationDisplay, setDesignationDisplay] = useState(false);
-
-  const toggleDisplay = () => {
-    setButtonDisplay(buttonDisplay === "Read more" ? "Read more" : "");
-    setDesignationDisplay(designationDisplay);
-  };
-
   return (
     <div className="success_card">
       <div className="alumni_card">
@@ -52,10 +41,10 @@ export default function StoryCardDetails({ member }) {
           <p className="alumni_content" style={{ height: "7.5em" }}>
             <span dangerouslySetInnerHTML={{ __html: member.content }} />
           </p>
-          <div className="content_detail" onClick={toggleDisplay}>
-            <Link href={`memberStoryDetails?id=${member.id}`} target="_blank">
-              {buttonDisplay}
-            </Link>
+          <div className="content_detail">
+            <a href={`memberStoryDetails?id=${member.id}`} target="_blank">
+              Read more
+            </a>
           </div>
         </>
       )}
