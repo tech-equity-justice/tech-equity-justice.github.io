@@ -1,5 +1,3 @@
-import Footer from "../components/footer";
-import Menu from "../components/menu";
 import { getSortedMembersData } from "../lib/getMembers";
 import StoryPage from "../components/storyPage";
 
@@ -15,8 +13,7 @@ export async function getStaticProps() {
 export default function storyDetails(props) {
   let successStories = props.successStories;
   return (
-    <div>
-      <Menu />
+    <>
       <div className="wrapper">
         <StoryPage
           members={successStories}
@@ -24,7 +21,6 @@ export default function storyDetails(props) {
           tagID="story-page"
         />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }

@@ -1,10 +1,13 @@
 import StoryDetail from "../../components/storyDetail";
 import { getSortedMembersData } from "../../lib/getMembers";
+import Layout from "../../components/layout";
 
 export default function Page({ storyData }) {
   return (
     <div>
-      <StoryDetail member={storyData} />
+      <Layout>
+        <StoryDetail member={storyData} />
+      </Layout>
     </div>
   );
 }
