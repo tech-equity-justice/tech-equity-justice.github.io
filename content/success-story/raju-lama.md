@@ -1,5 +1,4 @@
 ---
-id: 8
 name: "Raju Lama"
 linkedIn: "https://www.linkedin.com/in/raju-lama-7115b8200/"
 photo: "/images/fellows/2022/raju-lama.jpg"

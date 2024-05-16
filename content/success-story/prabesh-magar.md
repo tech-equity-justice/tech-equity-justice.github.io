@@ -1,5 +1,4 @@
 ---
-id: 6
 name: "Prabesh Magar"
 linkedIn: "https://www.linkedin.com/in/prabeshmagar/"
 photo: "/images/fellows/2023/prabesh-magar.jpg"

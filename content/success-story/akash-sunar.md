@@ -1,5 +1,4 @@
 ---
-id: 1
 name: "Akash Sunar"
 linkedIn: "https://www.linkedin.com/in/akashsunar/"
 photo: "/images/fellows/2023/akash-sunar.jpg"

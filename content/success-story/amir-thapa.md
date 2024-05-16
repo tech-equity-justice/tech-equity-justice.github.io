@@ -1,5 +1,4 @@
 ---
-id: 2
 name: "Amir Thapa"
 linkedIn: "https://www.linkedin.com/in/amir-thapa-42a8961b5/"
 photo: "/images/fellows/2022/amir-thapa.jpg"

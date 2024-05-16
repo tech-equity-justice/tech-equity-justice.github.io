@@ -1,5 +1,4 @@
 ---
-id: 5
 name: "Pitamber Rana"
 linkedIn: "https://www.linkedin.com/in/pitamber-rana-5b42a1186/"
 photo: "/images/fellows/2022/pitamber-rana.jpg"

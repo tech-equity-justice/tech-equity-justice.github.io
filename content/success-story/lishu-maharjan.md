@@ -1,5 +1,4 @@
 ---
-id: 3
 name: "Lishu Maharjan"
 linkedIn: "https://www.linkedin.com/in/lishu-maharjan/"
 photo: "/images/fellows/2023/lishu-maharjan.jpg"

@@ -1,5 +1,4 @@
 ---
-id: 4
 name: "Liza Maharjan"
 linkedIn: "https://www.linkedin.com/in/liza-maharjan1/"
 photo: "/images/fellows/2023/liza-maharjan.png"

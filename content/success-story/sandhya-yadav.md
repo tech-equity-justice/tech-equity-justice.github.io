@@ -1,5 +1,4 @@
 ---
-id: 9
 name: "Sandhya Yadav"
 linkedIn: "https://www.linkedin.com/in/sandhya-yadav-334873157/"
 photo: "/images/fellows/2022/sandhya-yadav.jpg"
