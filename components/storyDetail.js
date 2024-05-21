@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function StoryPageDetails({ member }) {
   return (
-    <div>
+    <div className="wrapper">
       <div className="page-grid">
         <div className="page-img">
           <Image
@@ -32,15 +32,15 @@ export default function StoryPageDetails({ member }) {
               />
             </a>
           </div>
+          {member.content !== "" && (
+            <>
+              <p className="page_content">
+                <span dangerouslySetInnerHTML={{ __html: member.content }} />
+              </p>
+            </>
+          )}
         </div>
       </div>
-      {member.content !== "" && (
-        <>
-          <p className="page_content">
-            <span dangerouslySetInnerHTML={{ __html: member.content }} />
-          </p>
-        </>
-      )}
     </div>
   );
 }

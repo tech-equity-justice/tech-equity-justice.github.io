@@ -3,7 +3,7 @@ import MailChimp from "./mailChimp";
 
 export default function ContactUs() {
   return (
-    <div className="dark-block" id="contact">
+    <div className="dark-block margin-top-0" id="contact">
       <div className="wrapper flow-xlg">
         <div className="grid grid-2up">
           <div>

@@ -1,4 +1,16 @@
 /*Custom Css for success_card*/
+.backgroundColor {
+  background-color: rgba(252, 212, 212, 0.2509803922);
+  padding: 5rem 0rem 9rem;
+}
+.title {
+  text-align: center;
+  padding: 1rem 0rem 1rem 0rem;
+  font-weight: bold;
+  color: $primary-color;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
 .card-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -17,6 +29,7 @@
   padding: 2rem 2rem 1rem 2rem;
   box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
   transition: all 0.23s ease-in-out 0s;
+  background-color: $White;
   .alumni_card {
     display: grid;
     grid-template-columns: 1fr 2fr;

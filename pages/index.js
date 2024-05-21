@@ -59,12 +59,12 @@ export default function Home(props) {
             title="ADVISORY GROUP"
             Component={MemberCardDetails}
           />
-          <ShowStories
-            members={successStories}
-            title="SUCCESS STORIES"
-            tagID="alumni-story"
-          />
         </div>
+        <ShowStories
+          members={successStories}
+          title="SUCCESS STORIES"
+          tagID="alumni-story"
+        />
         <ContactUs />
       </div>
     </Layout>
