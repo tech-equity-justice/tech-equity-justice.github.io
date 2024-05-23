@@ -42,9 +42,7 @@ export default function StoryCardDetails({ member }) {
             <span dangerouslySetInnerHTML={{ __html: member.content }} />
           </p>
           <div className="content_detail">
-            <a href={`story/${member.id}`} target="_blank">
-              Read more
-            </a>
+            <a href={`story/${member.id}`}>Read more</a>
           </div>
         </>
       )}
