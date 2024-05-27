@@ -1,5 +1,4 @@
-import Footer from "../components/footer";
-import Menu from "../components/menu";
+import Layout from "../components/layout";
 import ShowMembers from "../components/showMembers";
 import MemberCardDetails from "../components/memberCardDetails";
 import { getSortedMembersData } from "../lib/getMembers";
@@ -19,8 +18,7 @@ export default function SecondCohort(props) {
   let allAlumni2023 = props.allAlumni2023;
   let teachingAlumni = props.teachingAlumni;
   return (
-    <div>
-      <Menu />
+    <Layout>
       <div className="wrapper">
         <ShowMembers
           members={allAlumni2023}
@@ -35,7 +33,6 @@ export default function SecondCohort(props) {
           Component={MemberCardDetails}
         />
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 }
