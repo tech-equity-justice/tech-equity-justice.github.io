@@ -1,9 +1,17 @@
 .display-block {
   display: block;
 }
+.display-none {
+  display: none;
+}
 
 @include breakpoint-up(small) {
   .display-inline-sm {
     display: inline;
+  }
+}
+@include breakpoint-up(medium) {
+  .display-block-md {
+    display: block;
   }
 }
