@@ -12,14 +12,14 @@ import OurPrograms from "../components/ourPrograms";
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
   const allAdvisoryMembersData = getSortedMembersData("advisory");
-  const firstPBC = getSortedMembersData("pbc-202401");
+  const secondPBC = getSortedMembersData("pbc-202404");
   const successStories = getSortedMembersData("success-story");
 
   return {
     props: {
       allBoardMembersData,
       allAdvisoryMembersData,
-      firstPBC,
+      secondPBC,
       successStories,
     },
   };
@@ -28,7 +28,7 @@ export async function getStaticProps() {
 export default function Home(props) {
   let allBoardMembersData = props.allBoardMembersData;
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
-  let firstPBC = props.firstPBC;
+  let secondPBC = props.secondPBC;
   let successStories = props.successStories;
   return (
     <Layout>
@@ -43,9 +43,9 @@ export default function Home(props) {
         <Eligibility />
         <div className="wrapper">
           <ShowMembers
-            members={firstPBC}
-            title="PRE-B00TCAMP FELLOWS (202401)"
-            tagID="pbc-202401"
+            members={secondPBC}
+            title="PRE-B00TCAMP FELLOWS (202404)"
+            tagID="pbc-202404"
             Component={MemberCardDetails}
           />
           <ShowMembers
