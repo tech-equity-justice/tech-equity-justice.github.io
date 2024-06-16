@@ -15,10 +15,16 @@
   z-index: 1001;
   width: 50%;
   max-height: 80%;
-  overflow-y: auto;
+  overflow-y: scroll;
   animation-name: testimonyModal;
   animation-duration: 0.2s;
   animation-timing-function: ease-in-out;
+  @include breakpoint-down(small) {
+    width: 80%;
+  }
+  @include breakpoint-up(medium) {
+    width: 60%;
+  }
 }
 @keyframes testimonyModal {
   from {
@@ -28,14 +34,85 @@
     transform: scale(1);
   }
 }
-.grid-template-testimony {
-  grid-template-columns: 1fr 4fr !important;
+.flex-direction-sm {
+  @include breakpoint-down(small) {
+    flex-direction: column;
+  }
+}
+.flex-column-testimony {
+  @include breakpoint-down(small) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem !important;
+  }
+}
+.testimony-modal-card {
+  @include breakpoint-down(small) {
+    grid-gap: 1rem !important;
+  }
+  .modal-image {
+    width: 100px;
+  }
+  .modal-image img {
+    @include mixin-modal-img;
+    justify-content: center;
+    height: fit-content;
+  }
+  .testimony-info {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint-down(small) {
+      align-items: center;
+    }
+    .info_font a {
+      @include mixin-modal-font-decoration;
+      h3 {
+        @include mixin-card-h3-heading;
+        @include breakpoint-down(small) {
+          text-align: center;
+        }
+      }
+      &:hover {
+        color: $Gold;
+      }
+    }
+    .info_font p {
+      @include mixin-modal-font-paragraph;
+      @include breakpoint-down(small) {
+        text-align: center;
+      }
+    }
+    .company_logo {
+      a img {
+        @include mixin-card-company-logo;
+        @include breakpoint-down(small) {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+.quote-width {
+  img {
+    max-width: none;
+  }
+  @include breakpoint-down(small) {
+    margin-top: -15px;
+  }
+}
+.testimony-content {
+  padding-left: 0.2rem !important;
+  @include mixin-card-content;
+  @include breakpoint-down(small) {
+    padding-top: 0rem !important;
+  }
 }
 .margin-top-testimony {
   margin-top: 1.25rem !important;
 }
 .cursor-modal-detail {
-  cursor: default !important;
+  cursor: pointer;
 }
 .testimony-modal_close {
   color: $text-color;
