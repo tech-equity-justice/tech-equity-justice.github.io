@@ -1,0 +1,35 @@
+@mixin mixin-modal-img {
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+@mixin mixin-modal-font-decoration {
+  text-decoration: none;
+  color: $Fire;
+  text-transform: uppercase;
+}
+
+@mixin mixin-card-h3-heading {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  padding: 0.5rem 0rem;
+}
+@mixin mixin-modal-font-paragraph {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 1.2;
+}
+@mixin mixin-card-company-logo {
+  object-fit: contain;
+  object-position: 0% 30%;
+}
+
+@mixin mixin-card-content {
+  font-family: $secondary-font;
+  font-size: 1rem;
+  padding: 0.875rem 0.875rem 0rem;
+  line-height: 1.3;
+  overflow: hidden;
+}
