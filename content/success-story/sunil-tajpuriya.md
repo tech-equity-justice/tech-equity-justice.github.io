@@ -4,7 +4,7 @@ linkedIn: "https://www.linkedin.com/in/tajpuriya27/"
 photo: "/images/fellows/2023/suneel-tajpuriya.jpg"
 title: "Mid Level React Developer"
 company: "ThemeGrill"
-logo: "/images/companiesLogos/themegrill-logo.png"
+logo: "/images/companiesLogos/themegrill_logo.svg"
 company_logo: "https://themegrill.com/"
 ---
 

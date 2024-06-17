@@ -4,7 +4,7 @@ linkedIn: "https://www.linkedin.com/in/hemlaldulal/"
 photo: "/images/fellows/2023/hemlal-dulal.JPG"
 title: "Associate Software Engineer"
 company: "GrowByData"
-logo: ""
+logo: "/images/companiesLogos/growbydata_logo.svg"
 company_logo: "https://growbydata.com/"
 ---
 

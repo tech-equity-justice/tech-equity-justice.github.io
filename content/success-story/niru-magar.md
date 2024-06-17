@@ -4,7 +4,7 @@ linkedIn: "https://www.linkedin.com/in/nirumagar/"
 photo: "/images/fellows/2022/niru-magar.jpg"
 title: "Teaching Fellow"
 company: "TEJ Center"
-logo: "/images/logos/TEJ-main-lg.png"
+logo: "/images/companiesLogos/TEJ_logo.png"
 company_logo: "https://www.tejcenter.org/"
 ---
 
