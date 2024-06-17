@@ -13,7 +13,7 @@ import Testimonials from "../components/testimonials";
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
   const allAdvisoryMembersData = getSortedMembersData("advisory");
-  const firstPBC = getSortedMembersData("pbc-202401");
+  const secondPBC = getSortedMembersData("pbc-202404");
   const successStories = getSortedMembersData("success-story");
   const testimonial = getSortedMembersData("testimonials");
 
@@ -21,7 +21,7 @@ export async function getStaticProps() {
     props: {
       allBoardMembersData,
       allAdvisoryMembersData,
-      firstPBC,
+      secondPBC,
       successStories,
       testimonial,
     },
@@ -31,7 +31,7 @@ export async function getStaticProps() {
 export default function Home(props) {
   let allBoardMembersData = props.allBoardMembersData;
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
-  let firstPBC = props.firstPBC;
+  let secondPBC = props.secondPBC;
   let successStories = props.successStories;
   let testmony = props.testimonial;
   return (
@@ -47,9 +47,9 @@ export default function Home(props) {
         <Eligibility />
         <div className="wrapper">
           <ShowMembers
-            members={firstPBC}
-            title="PRE-B00TCAMP FELLOWS (202401)"
-            tagID="pbc-202401"
+            members={secondPBC}
+            title="PRE-B00TCAMP FELLOWS (202404)"
+            tagID="pbc-202404"
             Component={MemberCardDetails}
           />
           <ShowMembers
