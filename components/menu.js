@@ -41,9 +41,15 @@ export default function Menu() {
                 <div className="sub-menu">
                   <a
                     className="body2-bold"
-                    onClick={() => handleBatchClick("#pbc-202401")}
+                    onClick={() => handleBatchClick("#pbc-202404")}
                   >
-                    PBC Fellows
+                    Current
+                  </a>
+                  <a
+                    className="body2-bold"
+                    onClick={() => handleBatchClick("pbc-202401")}
+                  >
+                    202401
                   </a>
                 </div>
                 <a className="body2-bold bootcamp">
@@ -54,19 +60,18 @@ export default function Menu() {
                     onClick={() => handleBatchClick("fellows-2023")}
                     className="body2-bold"
                   >
-                    2023 Fellows
+                    202305
                   </a>
                   <a
                     onClick={() => handleBatchClick("fellows-2022")}
                     className="body2-bold"
                   >
-                    2022 Fellows
+                    202205
                   </a>
                 </div>
               </div>
             </div>
           </div>
-
           <a href="#contact" className="body2-bold fire-button">
             Contact us
           </a>
