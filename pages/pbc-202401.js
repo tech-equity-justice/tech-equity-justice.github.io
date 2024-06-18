@@ -17,12 +17,14 @@ export default function firstCohort(props) {
   return (
     <Layout>
       <div className="wrapper">
-        <ShowMembers
-          members={firstPBC}
-          title="PBC Fellows 202401"
-          tagID="PBC-202401"
-          Component={MemberCardDetails}
-        />
+        <div className="hero region-top-md">
+          <ShowMembers
+            members={firstPBC}
+            title="PBC 202401 TEJ Fellows"
+            tagID="PBC-202401"
+            Component={MemberCardDetails}
+          />
+        </div>
       </div>
     </Layout>
   );
