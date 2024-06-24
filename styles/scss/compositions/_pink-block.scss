@@ -1,0 +1,12 @@
+.pink-block {
+  background-color: $Pink;
+  color: $dark-color;
+  padding: 5rem 0;
+
+  a {
+    color: $dark-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
