@@ -20,18 +20,20 @@ export default function SecondCohort(props) {
   return (
     <Layout>
       <div className="wrapper">
-        <ShowMembers
-          members={allAlumni2023}
-          title="2023 TEJ Fellows"
-          tagID="alumni-2023"
-          Component={MemberCardDetails}
-        />
-        <ShowMembers
-          members={teachingAlumni}
-          title="Teaching Fellow"
-          tagID="teaching-fellow-2023"
-          Component={MemberCardDetails}
-        />
+        <div className="hero region-top-md">
+          <ShowMembers
+            members={allAlumni2023}
+            title="2023 TEJ Fellows"
+            tagID="alumni-2023"
+            Component={MemberCardDetails}
+          />
+          <ShowMembers
+            members={teachingAlumni}
+            title="Teaching Fellow"
+            tagID="teaching-fellow-2023"
+            Component={MemberCardDetails}
+          />
+        </div>
       </div>
     </Layout>
   );

@@ -20,18 +20,20 @@ export default function FirstCohort(props) {
   return (
     <Layout>
       <div className="wrapper">
-        <ShowMembers
-          members={allAlumni2022}
-          title="2022 TEJ Fellows"
-          tagID="alumni-2022"
-          Component={MemberCardDetails}
-        />
-        <ShowMembers
-          members={teachingAlumni}
-          title="Teaching Fellow"
-          tagID="teaching-fellow-2022"
-          Component={MemberCardDetails}
-        />
+        <div className="hero region-top-md">
+          <ShowMembers
+            members={allAlumni2022}
+            title="2022 TEJ Fellows"
+            tagID="alumni-2022"
+            Component={MemberCardDetails}
+          />
+          <ShowMembers
+            members={teachingAlumni}
+            title="Teaching Fellow"
+            tagID="teaching-fellow-2022"
+            Component={MemberCardDetails}
+          />
+        </div>
       </div>
     </Layout>
   );
