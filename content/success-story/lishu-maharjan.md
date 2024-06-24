@@ -8,4 +8,4 @@ logo: "/images/companiesLogos/rumsan-logo.png"
 company_logo: "https://rumsan.com/"
 ---
 
-Lishu Maharjan is from Bhimsensthan, Kathmandu. She has completed Bachelor of Information Management (BIM) degree at Prime College. Since she was little, she has had a strong interest in world history, music, nature exploration, and learning new things. She has always been interested in a career in IT, despite not having held any IT-related employment. She was able to learn useful programming skills over the course of four years, and is now trying to concentrate on becoming a Software Developer.
+Lishu Maharjan from Kathmandu completed her bachelor's degree in Information Management at Prime College. Post her training at TEJ Fellowship, she has been hired as an Associate Software Engineer at Rumsan, a premier blockchain company focused on social impact.

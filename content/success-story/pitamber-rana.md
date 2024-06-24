@@ -8,4 +8,4 @@ logo: "/images/companiesLogos/fusemachines_logo.png"
 company_logo: "https://fusemachines.com/"
 ---
 
-Pitamber Rana completed his Bachelor's degree in Business Management from Tribhuvan Multiple Campus in Tansen, Palpa, which is also his hometown. Though he has no formal experience in software development, he loves working with computers and enjoys exploring new things. He also loves sports, traveling, photography and editing.
+Pitamber Rana from Tansen completed his bachelor's degree in Business Management at Tribhuvan Multiple Campus. With no prior experience in IT, TEJ Fellowship enabled him to land a job as an Associate Software Engineer at Fusemachines, an AI company based in New York, NY.

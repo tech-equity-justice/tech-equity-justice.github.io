@@ -2,10 +2,10 @@
 name: "Sushil Kumar Thanet"
 linkedIn: "https://www.linkedin.com/in/sushilthanet/"
 photo: "/images/fellows/2023/sushil-thanet.png"
-title: "Student"
-company: "Lambton Collage"
+title: "Graduate Certificate"
+company: "Lambton College"
 logo: "/images/companiesLogos/lambton-collage.webp"
 company_logo: "https://www.lambtoncollege.ca/"
 ---
 
-Sushil Kumar Thanet is originally from East Nawalparasi, and currently lives in Baluwatar, Kathmandu. He has completed his Bachelor's degree in Information Management from KIST College of Management, Kamalpokhari. Recently, he has completed an internship in the US Embassy, Kathmandu. He has been very enthusiastic about computer science and technologies since his childhood. Besides that, he also likes to play games - physical or virtual, bike rides, swimming, fishing.
+Sushil Kumar Thanet from East Nawalparasi completed his bachelor's degree in Information Management at KIST College. Post TEJ Fellowship, he has been accepted into the Full Stack Software Development Graduate Certificate program at Lambton College in Ontario, Canada.

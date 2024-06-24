@@ -8,4 +8,4 @@ logo: "/images/companiesLogos/themegrill_logo.svg"
 company_logo: "https://themegrill.com/"
 ---
 
-Sunil comes from a village, Panchagachhi, in Jhapa. He always strives to learn more and expand his knowledge. He is particularly fascinated by core software development and the inner workings of computers. He is eager to continue growing both personally and professionally.
+Sunil comes from a village, Panchagachhi, in Jhapa. He completed his bachelor's degree from the Institute of Engineering, Purwanchal campus, Dharan. TEJ Fellowship trained and enabled him to get a job as a Mid Level React Developer at Theme Grill.
