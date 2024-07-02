@@ -6,12 +6,15 @@
 @import "scss/compositions/nav";
 @import "scss/compositions/dark-block";
 @import "scss/compositions/light-block";
+@import "scss/compositions/pink-block";
 @import "scss/compositions/color-1-block";
 @import "scss/compositions/card";
 @import "scss/compositions/footer";
 @import "scss/compositions/form";
 @import "scss/compositions/join-us-modal";
 @import "scss/compositions/team";
+@import "scss/compositions/success-stories";
+@import "scss/compositions/story-details";
 
 //block
 @import "scss/block/button";
@@ -36,5 +39,5 @@
 //fonts
 @import "scss/fonticons";
 
-//fontawesome for the icon 
-@import '~@fortawesome/fontawesome-free/css/all.css';
+//fontawesome for the icon
+@import "~@fortawesome/fontawesome-free/css/all.css";
