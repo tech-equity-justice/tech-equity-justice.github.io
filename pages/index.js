@@ -44,7 +44,7 @@ export default function Home(props) {
         <div className="wrapper">
           <ShowMembers
             members={secondPBC}
-            title="PRE-B00TCAMP FELLOWS (202404)"
+            title="PRE-B00TCAMP FELLOWS (Apr-2024)"
             tagID="pbc-202404"
             Component={MemberCardDetails}
           />

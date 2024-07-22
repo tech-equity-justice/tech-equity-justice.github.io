@@ -62,7 +62,7 @@ export default function Menu() {
                       className="body2-bold"
                       onClick={() => handleBatchClick("pbc-202401")}
                     >
-                      202401
+                      Jan-2024
                     </a>
                   </div>
                   <a className="body2-bold bootcamp">
@@ -73,13 +73,13 @@ export default function Menu() {
                       onClick={() => handleBatchClick("fellows-2023")}
                       className="body2-bold"
                     >
-                      202305
+                      May-2023
                     </a>
                     <a
                       onClick={() => handleBatchClick("fellows-2022")}
                       className="body2-bold"
                     >
-                      202205
+                      May-2022
                     </a>
                   </div>
                 </div>
