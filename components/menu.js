@@ -39,8 +39,15 @@ export default function Menu() {
             >
               About us
             </a>
+
             <a className="body2-bold" onClick={() => handleBatchClick("#team")}>
               Our team
+            </a>
+            <a
+              className="body2-bold display-none display-block-md"
+              onClick={() => handleBatchClick("#alumni-story")}
+            >
+              Success stories
             </a>
             <div className="navbar-fellow">
               <button className="body2-bold">
@@ -85,12 +92,12 @@ export default function Menu() {
                 </div>
               </div>
             </div>
-            <a
+            {/* <a
               className="body2-bold display-none display-block-md"
               onClick={() => handleBatchClick("#alumni-story")}
             >
               Success stories
-            </a>
+            </a> */}
             <a href="#contact" className="body2-bold fire-button">
               Contact us
             </a>
