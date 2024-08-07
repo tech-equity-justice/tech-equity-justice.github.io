@@ -6,6 +6,7 @@ import { useState } from "react";
 export default function Menu() {
   const router = useRouter();
   const [openHamburger, setOpenHamburger] = useState(false);
+  const [openFellowMenu, setFellowMenu] = useState(false);
 
   const handleBatchClick = (menuItem) => {
     router.push(`/${menuItem}`);
@@ -15,6 +16,9 @@ export default function Menu() {
 
   const toggleMenu = () => {
     setOpenHamburger(!openHamburger);
+  };
+  const toggleFellowMenu = () => {
+    setFellowMenu(!openFellowMenu);
   };
   return (
     /* Navbar */
@@ -50,47 +54,54 @@ export default function Menu() {
               Success stories
             </a>
             <div className="navbar-fellow">
-              <button className="body2-bold">
-                Our fellows<i className="fa fa-caret-down"></i>
+              <button className="body2-bold" onClick={toggleFellowMenu}>
+                Our fellows
+                <i
+                  className={`fa fa-caret-down ${
+                    openFellowMenu ? "rotate" : ""
+                  }`}
+                ></i>
               </button>
-              <div className="dropdown-content">
-                <div className="cohort-container">
-                  <a className="body2-bold pre-bootcamp">
-                    Pre Bootcamp <i className="fa fa-caret-right rotate"></i>
-                  </a>
-                  <div className="sub-menu">
-                    <a
-                      className="body2-bold"
-                      onClick={() => handleBatchClick("#pbc-202404")}
-                    >
-                      Current
+              {openFellowMenu && (
+                <div className="dropdown-content">
+                  <div className="cohort-container">
+                    <a className="body2-bold pre-bootcamp">
+                      Pre Bootcamp <i className="fa fa-caret-right rotate"></i>
                     </a>
-                    <a
-                      className="body2-bold"
-                      onClick={() => handleBatchClick("pbc-202401")}
-                    >
-                      Jan-2024
+                    <div className="sub-menu">
+                      <a
+                        className="body2-bold"
+                        onClick={() => handleBatchClick("#pbc-202404")}
+                      >
+                        Current
+                      </a>
+                      <a
+                        className="body2-bold"
+                        onClick={() => handleBatchClick("pbc-202401")}
+                      >
+                        Jan-2024
+                      </a>
+                    </div>
+                    <a className="body2-bold bootcamp">
+                      Bootcamp <i className="fa fa-caret-right rotate"></i>
                     </a>
-                  </div>
-                  <a className="body2-bold bootcamp">
-                    Bootcamp <i className="fa fa-caret-right rotate"></i>
-                  </a>
-                  <div className="sub-menu">
-                    <a
-                      onClick={() => handleBatchClick("fellows-2023")}
-                      className="body2-bold"
-                    >
-                      May-2023
-                    </a>
-                    <a
-                      onClick={() => handleBatchClick("fellows-2022")}
-                      className="body2-bold"
-                    >
-                      May-2022
-                    </a>
+                    <div className="sub-menu">
+                      <a
+                        onClick={() => handleBatchClick("fellows-2023")}
+                        className="body2-bold"
+                      >
+                        May-2023
+                      </a>
+                      <a
+                        onClick={() => handleBatchClick("fellows-2022")}
+                        className="body2-bold"
+                      >
+                        May-2022
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
             {/* <a
               className="body2-bold display-none display-block-md"
