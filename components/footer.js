@@ -16,31 +16,33 @@ export default function Footer() {
             <a href="#contact">Contact us</a>
           </p>
         </div>
-        <div className="flex gap-small">
-          <a
-            style={{ width: "25px", height: "25px" }}
-            href="https://www.linkedin.com/company/tej-fellowship/"
-            target="_blank"
-          >
-            <Image
-              src={"/images/social/linkedin.svg"}
-              width={25}
-              height={25}
-              alt="linkedin"
-            />
-          </a>
-          <a
-            style={{ width: "24px", height: "24px" }}
-            href="https://www.facebook.com/TEJ.fellowship"
-            target="_blank"
-          >
-            <Image
-              src={"/images/social/facebook.svg"}
-              width={24}
-              height={24}
-              alt="facebook"
-            />
-          </a>
+        <div className="flex gap-small social">
+          <div className="social-row">
+            <a
+              style={{ width: "25px", height: "25px" }}
+              href="https://www.linkedin.com/company/tej-fellowship/"
+              target="_blank"
+            >
+              <Image
+                src={"/images/social/linkedin.svg"}
+                width={25}
+                height={25}
+                alt="linkedin"
+              />
+            </a>
+            <a
+              style={{ width: "24px", height: "24px" }}
+              href="https://www.facebook.com/TEJ.fellowship"
+              target="_blank"
+            >
+              <Image
+                src={"/images/social/facebook.svg"}
+                width={24}
+                height={24}
+                alt="facebook"
+              />
+            </a>
+          </div>
           <p className="body2-bold">
             <a href="mailto:tej.fellowship@gmail.com">
               tej.fellowship@gmail.com
