@@ -29,6 +29,12 @@ nav {
         margin-left: 15px;
         color: #999;
       }
+      .fa-caret-down {
+        transition: transform 0.2s ease-in-out;
+      }
+      .fa-caret-down.rotate {
+        transform: rotate(180deg);
+      }
       &:hover {
         color: $primary-color;
       }
