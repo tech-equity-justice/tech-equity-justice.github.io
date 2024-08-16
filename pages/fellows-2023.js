@@ -23,7 +23,7 @@ export default function SecondCohort(props) {
         <div className="hero region-top-md">
           <ShowMembers
             members={allAlumni2023}
-            title="2023 TEJ Fellows"
+            title="May-2023 Bootcamp Fellows"
             tagID="alumni-2023"
             Component={MemberCardDetails}
           />
