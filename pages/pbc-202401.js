@@ -20,7 +20,7 @@ export default function firstCohort(props) {
         <div className="hero region-top-md">
           <ShowMembers
             members={firstPBC}
-            title="Jan-2024 PBC TEJ Fellows"
+            title="Jan-2024 Pre-Bootcamp TEJ Fellows"
             tagID="PBC-202401"
             Component={MemberCardDetails}
           />
