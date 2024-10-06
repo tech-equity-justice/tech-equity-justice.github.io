@@ -46,16 +46,26 @@ export default function TestimonialDetails({ member }) {
         </div>
         {member.content !== "" && (
           <>
-            <p
-              className="alumni_content cursor-modal-detail"
-              style={{ height: "7.5em" }}
-            >
-              {member.content && member.content.length <= 200 ? (
-                <span dangerouslySetInnerHTML={{ __html: member.content }} />
-              ) : (
-                member.content.substring(0, 200) + "...."
-              )}
-            </p>
+            <div className="flex">
+              <div className="quote-width">
+                <Image
+                  src={"/images/quote/quote.svg"}
+                  width={25}
+                  height={25}
+                  alt="quote"
+                />
+              </div>
+              <p
+                className="testimony-content cursor-modal-detail"
+                style={{ height: "7.5em" }}
+              >
+                {member.content && member.content.length <= 200 ? (
+                  <span dangerouslySetInnerHTML={{ __html: member.content }} />
+                ) : (
+                  member.content.substring(0, 200) + "...."
+                )}
+              </p>
+            </div>
             <div className="content_detail"></div>
             {visibleModal && (
               <TestimonyModal onClose={toggleDisplay} member={member} />

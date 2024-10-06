@@ -29,7 +29,7 @@
       img {
         @include mixin-modal-img;
         @include breakpoint-down(small) {
-          height: fit-content;
+          // height: fit-content;
         }
       }
     }

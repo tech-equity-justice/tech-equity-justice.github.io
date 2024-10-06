@@ -16,6 +16,11 @@
   width: 50%;
   max-height: 80%;
   overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   animation-name: testimonyModal;
   animation-duration: 0.2s;
   animation-timing-function: ease-in-out;
@@ -47,16 +52,26 @@
   }
 }
 .testimony-modal-card {
+  max-width: 1024px;
   @include breakpoint-down(small) {
     grid-gap: 1rem !important;
   }
   .modal-image {
     width: 100px;
+    @include breakpoint-down(small) {
+      width: 150px;
+      height: 150px;
+    }
   }
   .modal-image img {
     @include mixin-modal-img;
     justify-content: center;
     height: fit-content;
+    height: 100px;
+    @include breakpoint-down(small) {
+      width: 150px;
+      height: 150px;
+    }
   }
   .testimony-info {
     height: 100px;
@@ -98,14 +113,14 @@
     max-width: none;
   }
   @include breakpoint-down(small) {
-    margin-top: -15px;
+    // margin-top: -15px;
   }
 }
 .testimony-content {
   padding-left: 0.2rem !important;
   @include mixin-card-content;
   @include breakpoint-down(small) {
-    padding-top: 0rem !important;
+    // padding-top: 0rem !important;
   }
 }
 .margin-top-testimony {

@@ -13,7 +13,7 @@ export default function TestimonyModal({ member, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex flex-direction-sm space-between">
-          <div className="flex flex-column-testimony flex-start-sm">
+          <div className="flex flex-column-testimony flex-start-sm  margin-top-testimony">
             <div className="modal-image">
               <Image
                 src={member.photo}
