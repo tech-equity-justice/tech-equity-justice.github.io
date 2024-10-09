@@ -61,7 +61,6 @@
     }
     .page_content {
       font-size: 1.125rem;
-      border-top: solid 0.1rem $Fire;
       padding-top: 2rem;
       line-height: 1.5rem;
       @include breakpoint-down(medium) {
@@ -69,4 +68,11 @@
       }
     }
   }
+}
+.content-border-top {
+  border-top: solid 0.1rem $Fire;
+}
+
+.line-height-2rem {
+  line-height: 2rem !important;
 }

@@ -32,6 +32,13 @@ export default function StoryPageDetails({ member }) {
               />
             </a>
           </div>
+          {member.content_heading !== "" && (
+            <>
+              <p className="bold2bold region-top-md content-border-top line-height-2rem">
+                {member.content_heading}
+              </p>
+            </>
+          )}
           {member.content !== "" && (
             <>
               <p className="page_content">
