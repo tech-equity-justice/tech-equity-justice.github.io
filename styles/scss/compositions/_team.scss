@@ -96,3 +96,7 @@
     color: $primary-color;
   }
 }
+
+.no-hover-effect {
+  pointer-events: none;
+}
