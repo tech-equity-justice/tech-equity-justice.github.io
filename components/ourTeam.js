@@ -5,7 +5,7 @@ export default function OurTeam({ members, title, tagID }) {
       <div id={tagID && tagID}>
         <p className="h2">{title}</p>
       </div>
-      <div className="card-container grid grid-4up">
+      <div className="card-container grid grid-3up">
         {members.map((member) => (
           <OurTeamDetails member={member} key={member.id} />
         ))}

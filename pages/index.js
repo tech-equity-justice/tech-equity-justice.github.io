@@ -59,7 +59,7 @@ export default function Home(props) {
           />
           <OurTeam
             members={ourTeam}
-            title="OUR TEAM"
+            title="TEAM"
             tagID="our-team"
             Component={MemberCardDetails}
           />

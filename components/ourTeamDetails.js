@@ -6,22 +6,22 @@ export default function OurTeamDetails({ member }) {
       <div className="member_img">
         <Image src={member.photo} alt="our_team" width={300} height={300} />
       </div>
-      <a className="no-hover-effect">
-        <h3>{member.name}</h3>
-      </a>
-      <p>{member.role}</p>
-      <a
-        style={{ width: "25px", height: "25px" }}
-        href={member.linkedIn}
-        target="_blank"
-      >
-        <Image
-          src={"/images/social/linkedin.svg"}
-          width={25}
-          height={25}
-          alt="linkedin"
-        />
-      </a>
+      <div className="flex flex-direction-column region-lr region-tn gap-small">
+        <div className="flex flex-align-start space-between">
+          <a className="no-hover-effect">
+            <h3 className="no-padding">{member.name}</h3>
+          </a>
+          <a href={member.linkedIn} target="_blank">
+            <Image
+              src={"/images/social/linkedin-color.svg"}
+              width={18}
+              height={18}
+              alt="linkedin"
+            />
+          </a>
+        </div>
+        <p className="body2-bold no-padding">{member.role}</p>
+      </div>
     </div>
   );
 }
