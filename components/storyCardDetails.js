@@ -1,7 +1,13 @@
 import Image from "next/image";
 export default function StoryCardDetails({ member }) {
   return (
-    <div className="success_card">
+    <div
+      className="success_card"
+      style={{
+        display: "flex",
+        "flex-flow": "column",
+      }}
+    >
       <div className="alumni_card">
         <div className="alumni_image">
           <Image
@@ -37,7 +43,14 @@ export default function StoryCardDetails({ member }) {
         </div>
       </div>
       {member.content !== "" && (
-        <>
+        <div
+          style={{
+            display: "flex",
+            "flex-direction": "column",
+            "justify-content": "space-between",
+            "flex-grow": "1",
+          }}
+        >
           <p className="alumni_content">
             <span dangerouslySetInnerHTML={{ __html: member.content }} />
           </p>
@@ -46,7 +59,7 @@ export default function StoryCardDetails({ member }) {
               <a href={`story/${member.id}`}>Read case study</a>
             </div>
           )}
-        </>
+        </div>
       )}
     </div>
   );
