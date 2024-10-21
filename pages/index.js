@@ -16,9 +16,15 @@ export async function getStaticProps() {
   const allAdvisoryMembersData = getSortedMembersData("advisory");
   const secondPBC = getSortedMembersData("pbc-202404");
   const successStories = getSortedMembersData("success-story");
+  const caseStudies = getSortedMembersData("case-studies");
   const testimonial = getSortedMembersData("testimonials");
-
   const ourTeam = getSortedMembersData("our-team");
+
+  successStories.map((story) =>
+    caseStudies.find((caseStudy) => caseStudy.id === story.id)
+      ? (story.caseStudy = true)
+      : (story.caseStudy = false)
+  );
   return {
     props: {
       allBoardMembersData,

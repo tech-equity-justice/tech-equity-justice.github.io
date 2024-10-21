@@ -25,8 +25,8 @@ export function getStaticPaths() {
 }
 
 export function getStaticProps({ params }) {
-  const successStories = getSortedMembersData("success-story");
-  const storyData = successStories.find((story) => story.id == params.slug);
+  let successStories = getSortedMembersData("case-studies");
+  let storyData = successStories.find((story) => story.id == params.slug);
 
   return {
     props: {

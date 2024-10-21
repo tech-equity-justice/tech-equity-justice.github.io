@@ -66,7 +66,10 @@ export default function TestimonialDetails({ member }) {
                 )}
               </p>
             </div>
-            <div className="content_detail"></div>
+            <div
+              className="content_detail"
+              style={{ "border-top": "none" }}
+            ></div>
             {visibleModal && (
               <TestimonyModal onClose={toggleDisplay} member={member} />
             )}
