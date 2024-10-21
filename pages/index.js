@@ -9,12 +9,15 @@ import MemberCardDetails from "../components/memberCardDetails";
 import OurTeamDetails from "../components/ourTeamDetails";
 import ShowStories from "../components/showStories";
 import OurPrograms from "../components/ourPrograms";
+import Testimonials from "../components/testimonials";
 
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
   const allAdvisoryMembersData = getSortedMembersData("advisory");
   const secondPBC = getSortedMembersData("pbc-202404");
   const successStories = getSortedMembersData("success-story");
+  const testimonial = getSortedMembersData("testimonials");
+
   const ourTeam = getSortedMembersData("our-team");
   return {
     props: {
@@ -22,6 +25,7 @@ export async function getStaticProps() {
       allAdvisoryMembersData,
       secondPBC,
       successStories,
+      testimonial,
       ourTeam,
     },
   };
@@ -32,6 +36,7 @@ export default function Home(props) {
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
   let secondPBC = props.secondPBC;
   let successStories = props.successStories;
+  let testmony = props.testimonial;
   let ourTeam = props.ourTeam;
   return (
     <Layout>
@@ -74,6 +79,11 @@ export default function Home(props) {
           members={successStories}
           title="SUCCESS STORIES"
           tagID="alumni-story"
+        />
+        <Testimonials
+          members={testmony}
+          title="TESTIMONIALS"
+          tagID="testimonials"
         />
         <ContactUs />
       </div>
