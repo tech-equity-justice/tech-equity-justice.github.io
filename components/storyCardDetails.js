@@ -41,9 +41,11 @@ export default function StoryCardDetails({ member }) {
           <p className="alumni_content">
             <span dangerouslySetInnerHTML={{ __html: member.content }} />
           </p>
-          <div className="content_detail">
-            <a href={`story/${member.id}`}>Read more</a>
-          </div>
+          {member.caseStudy && (
+            <div className="content_detail">
+              <a href={`story/${member.id}`}>Read case study</a>
+            </div>
+          )}
         </>
       )}
     </div>
