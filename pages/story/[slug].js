@@ -14,10 +14,7 @@ export default function Page({ storyData }) {
 
 export function getStaticPaths() {
   const successStories = getSortedMembersData("success-story");
-
-  const allStories = [...successStories];
-
-  const id = allStories.map((story) => ({
+  const id = successStories.map((story) => ({
     params: { slug: `${story.id}` },
   }));
 
@@ -30,11 +27,6 @@ export function getStaticPaths() {
 export function getStaticProps({ params }) {
   let successStories = getSortedMembersData("case-studies");
   let storyData = successStories.find((story) => story.id == params.slug);
-
-  if (!storyData) {
-    successStories = getSortedMembersData("success-story");
-    storyData = successStories.find((story) => story.id == params.slug);
-  }
 
   return {
     props: {
