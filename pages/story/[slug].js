@@ -14,9 +14,8 @@ export default function Page({ storyData }) {
 
 export function getStaticPaths() {
   const successStories = getSortedMembersData("success-story");
-  const caseStudies = getSortedMembersData("case-studies");
 
-  const allStories = [...successStories, ...caseStudies];
+  const allStories = [...successStories];
 
   const id = allStories.map((story) => ({
     params: { slug: `${story.id}` },
