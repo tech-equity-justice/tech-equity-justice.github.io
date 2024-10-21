@@ -38,12 +38,12 @@ export default function StoryCardDetails({ member }) {
       </div>
       {member.content !== "" && (
         <>
-          <p className="alumni_content" style={{ height: "7.5em" }}>
+          <p className="alumni_content">
             <span dangerouslySetInnerHTML={{ __html: member.content }} />
           </p>
-          <div className="content_detail">
-            <a href={`story/${member.id}`}>Read more</a>
-          </div>
+          {/* <div className="content_detail"> */}
+          {/* <a href={`story/${member.id}`}>Read more</a> */}
+          {/* </div> */}
         </>
       )}
     </div>

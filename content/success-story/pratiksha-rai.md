@@ -8,4 +8,4 @@ logo: "/images/companiesLogos/rumsan-logo.png"
 company_logo: "https://rumsan.com/"
 ---
 
-Originally from Janakpur, Pratiksha Rai has a Bachelors of Arts degree from Trichandra College. Her professional career up to this point has been in the NGO sector. She has always been interested in programming, but felt that her non-technical background and lack of guidance would pose a challenge to her entry into the field. Besides coding, she is interested in understanding social, economic, and cultural institutions. Even without a technical background, she has been known to provide practical technical solutions to real world problems in her professional work.
+Originally from Janakpur, Pratiksha Rai has a BA from Trichandra College. She was able to go from a non-technical background to software engineering at TEJ Fellowship, and is now hired as an Associate Software Engineer at Rumsan, a premier blockchain company focused on social impact.

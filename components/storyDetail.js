@@ -28,7 +28,7 @@ export default function StoryPageDetails({ member }) {
                 src={member.logo}
                 alt={member.logo}
                 width={150}
-                height={100}
+                height={60}
               />
             </a>
           </div>

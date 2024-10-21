@@ -2,10 +2,10 @@
 name: "Prabesh Magar"
 linkedIn: "https://www.linkedin.com/in/prabeshmagar/"
 photo: "/images/fellows/2023/prabesh-magar.jpg"
-title: "Intern"
-company: "Rumsan"
-logo: "/images/companiesLogos/rumsan-logo.png"
-company_logo: "https://rumsan.com/"
+title: "Graduate Certificate"
+company: "Lambton College"
+logo: "/images/companiesLogos/lambton-collage.webp"
+company_logo: "https://www.lambtoncollege.ca/"
 ---
 
-Prabesh Magar is from Bharatpur, Chitwan and has completed his bachelors in Computer Engineering from United Technical College. He has enthusiasm to take on new challenges, and loves to work in a team. He is very fond of learning new technologies and discussing them with his peers. In his free time he loves to cook and read books.
+Prabesh Magar from Bharatpur, Chitwan completed his bachelor's degree in Computer Engineering at United Technical College. After TEJ Fellowship, he has been accepted into the DevOps Graduate Certificate program at Lambton College in Toronto, Canada.
