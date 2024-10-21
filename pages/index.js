@@ -6,8 +6,10 @@ import ShowMembers from "../components/showMembers";
 import { getSortedMembersData } from "../lib/getMembers";
 import ContactUs from "../components/contactUs";
 import MemberCardDetails from "../components/memberCardDetails";
+import OurTeamDetails from "../components/ourTeamDetails";
 import ShowStories from "../components/showStories";
 import OurPrograms from "../components/ourPrograms";
+import Testimonials from "../components/testimonials";
 
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
@@ -15,19 +17,22 @@ export async function getStaticProps() {
   const secondPBC = getSortedMembersData("pbc-202404");
   const successStories = getSortedMembersData("success-story");
   const caseStudies = getSortedMembersData("case-studies");
+  const testimonial = getSortedMembersData("testimonials");
+  const ourTeam = getSortedMembersData("our-team");
 
   successStories.map((story) =>
     caseStudies.find((caseStudy) => caseStudy.id === story.id)
       ? (story.caseStudy = true)
       : (story.caseStudy = false)
   );
-
   return {
     props: {
       allBoardMembersData,
       allAdvisoryMembersData,
       secondPBC,
       successStories,
+      testimonial,
+      ourTeam,
     },
   };
 }
@@ -37,6 +42,8 @@ export default function Home(props) {
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
   let secondPBC = props.secondPBC;
   let successStories = props.successStories;
+  let testmony = props.testimonial;
+  let ourTeam = props.ourTeam;
   return (
     <Layout>
       {/* <!-- Blob --> */}
@@ -62,6 +69,13 @@ export default function Home(props) {
             Component={MemberCardDetails}
           />
           <ShowMembers
+            members={ourTeam}
+            title="TEAM"
+            tagID="our-team"
+            gridStyle="grid-3up"
+            Component={OurTeamDetails}
+          />
+          <ShowMembers
             members={allAdvisoryMembersData}
             title="ADVISORY GROUP"
             Component={MemberCardDetails}
@@ -71,6 +85,11 @@ export default function Home(props) {
           members={successStories}
           title="SUCCESS STORIES"
           tagID="alumni-story"
+        />
+        <Testimonials
+          members={testmony}
+          title="TESTIMONIALS"
+          tagID="testimonials"
         />
         <ContactUs />
       </div>
