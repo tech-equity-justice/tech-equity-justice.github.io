@@ -1,0 +1,145 @@
+/*Custom css for testimonial card modal*/
+.testimony-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.testimony-modal-card {
+  background: $light-color;
+  position: relative;
+  z-index: 1001;
+  width: 50%;
+  max-height: 80%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  animation-name: testimonyModal;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+  @include breakpoint-down(small) {
+    width: 80%;
+  }
+  @include breakpoint-up(medium) {
+    width: 60%;
+  }
+}
+@keyframes testimonyModal {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.flex-direction-sm {
+  @include breakpoint-down(small) {
+    flex-direction: column;
+  }
+}
+.flex-column-testimony {
+  @include breakpoint-down(small) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem !important;
+  }
+}
+.testimony-modal-card {
+  max-width: 1024px;
+  @include breakpoint-down(small) {
+    grid-gap: 1rem !important;
+  }
+  .modal-image {
+    width: 100px;
+    @include breakpoint-down(small) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .modal-image img {
+    @include mixin-modal-img;
+    justify-content: center;
+    height: fit-content;
+    height: 100px;
+    @include breakpoint-down(small) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .testimony-info {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint-down(small) {
+      align-items: center;
+    }
+    .info_font a {
+      @include mixin-modal-font-decoration;
+      h3 {
+        @include mixin-card-h3-heading;
+        @include breakpoint-down(small) {
+          text-align: center;
+        }
+      }
+      &:hover {
+        color: $Gold;
+      }
+    }
+    .info_font p {
+      @include mixin-modal-font-paragraph;
+      @include breakpoint-down(small) {
+        text-align: center;
+      }
+    }
+    .company_logo {
+      a img {
+        @include mixin-card-company-logo;
+        @include breakpoint-down(small) {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+.quote-width {
+  img {
+    max-width: none;
+  }
+  @include breakpoint-down(small) {
+    // margin-top: -15px;
+  }
+}
+.testimony-content {
+  padding-left: 0.2rem !important;
+  @include mixin-card-content;
+  @include breakpoint-down(small) {
+    // padding-top: 0rem !important;
+  }
+}
+.margin-top-testimony {
+  margin-top: 1.25rem !important;
+}
+.cursor-modal-detail {
+  cursor: pointer;
+}
+.testimony-modal_close {
+  color: $text-color;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  &:hover,
+  :focus {
+    color: $Gold;
+  }
+}

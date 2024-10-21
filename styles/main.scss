@@ -3,6 +3,7 @@
 @import "scss/global";
 
 //compositions
+@import "scss/compositions/modal-card-property";
 @import "scss/compositions/nav";
 @import "scss/compositions/dark-block";
 @import "scss/compositions/light-block";
@@ -15,6 +16,7 @@
 @import "scss/compositions/team";
 @import "scss/compositions/success-stories";
 @import "scss/compositions/story-details";
+@import "scss/compositions/testimonial-modal";
 @import "scss/compositions/hamburger-menu";
 
 //block
