@@ -64,13 +64,15 @@ export default function TestimonyModal({ member, onClose }) {
           </div>
           {member.content !== "" && (
             <>
-              <p className="testimony-content">
+              <p
+                className="testimony-content"
+                style={{ "padding-bottom": "2rem" }}
+              >
                 <span dangerouslySetInnerHTML={{ __html: member.content }} />
               </p>
             </>
           )}
         </div>
-        <div className="content_detail margin-top-testimony"></div>
       </div>
     </div>
   );
