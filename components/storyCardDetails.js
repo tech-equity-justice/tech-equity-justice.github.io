@@ -5,7 +5,7 @@ export default function StoryCardDetails({ member }) {
       className="success_card"
       style={{
         display: "flex",
-        "flex-flow": "column",
+        flexDirection: "column",
       }}
     >
       <div className="alumni_card">
@@ -46,9 +46,9 @@ export default function StoryCardDetails({ member }) {
         <div
           style={{
             display: "flex",
-            "flex-direction": "column",
-            "justify-content": "space-between",
-            "flex-grow": "1",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            flexGrow: "1",
           }}
         >
           <p className="alumni_content">
