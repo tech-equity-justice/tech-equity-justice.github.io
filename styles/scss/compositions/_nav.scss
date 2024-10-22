@@ -79,6 +79,9 @@ nav {
         &:hover {
           color: $primary-color;
         }
+        @include breakpoint-down(small) {
+          padding-right: 5px;
+        }
       }
       .sub-menu {
         display: none;
@@ -95,6 +98,14 @@ nav {
         @include breakpoint-down(small) {
           min-width: 165px;
           margin-left: 30px;
+          text-align: end;
+          padding-top: 15px;
+          margin-top: -19px;
+        }
+        a {
+          @include breakpoint-down(small) {
+            font-size: 18px;
+          }
         }
       }
       @include breakpoint-down(small) {
