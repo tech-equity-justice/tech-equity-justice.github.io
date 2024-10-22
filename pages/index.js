@@ -66,6 +66,7 @@ export default function Home(props) {
             members={allBoardMembersData}
             title="BOARD"
             tagID="team"
+            gridStyle="grid-3up"
             Component={MemberCardDetails}
           />
           <ShowMembers
