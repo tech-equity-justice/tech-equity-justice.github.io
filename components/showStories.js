@@ -1,6 +1,6 @@
 import StoryCardDetails from "./storyCardDetails";
 export default function ShowStories({ members, title, tagID }) {
-  members.sort((a, b) => (a.caseStudy ? -1 : 1));
+  members.sort((a) => (a.caseStudy ? -1 : 1));
   return (
     <>
       <div className="pink-block">
