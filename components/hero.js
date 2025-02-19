@@ -25,6 +25,7 @@ export default function Hero() {
           </div>
         </div>
         <div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/browser.svg" alt="Image of a browser" />
         </div>
       </div>
