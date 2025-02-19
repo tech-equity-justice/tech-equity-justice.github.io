@@ -1,5 +1,5 @@
 ---
-name: "Jagriti Kumari"
+name: "Jagriti Kumari Jha"
 linkedIn: ""
 photo: "/images/pbc/pbc-202411/jagriti-kumari.jpeg"
 ---

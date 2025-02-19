@@ -1,5 +1,5 @@
 ---
-name: "Topraj Gurung"
+name: "Dr. Topraj Gurung"
 linkedIn: "https://www.linkedin.com/in/topraj-gurung-63552b7a/"
 photo: "/images/topraj_gurung.jpeg"
 ---
