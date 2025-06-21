@@ -15,7 +15,7 @@ export default function OurPrograms() {
               underrepresented communities. The fellows will be trained from
               little or no coding knowledge to fully capable software engineers
               earning competitive salaries. Fellows will be paid a stipend of
-              Rs. 16,000.00 a month throughout the program.
+              Rs. 15,000.00 a month throughout the program.
             </p>
             <p className="region-tn body2">
               The TEJ Fellows are selected following a rigorous selection
