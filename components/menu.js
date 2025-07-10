@@ -99,6 +99,12 @@ export default function Menu() {
                     </a>
                     <div className="sub-menu">
                       <a
+                        onClick={() => handleBatchClick("#fellows-2025")}
+                        className="body2-bold"
+                      >
+                        Current
+                      </a>
+                      <a
                         onClick={() => handleBatchClick("fellows-2023")}
                         className="body2-bold"
                       >
