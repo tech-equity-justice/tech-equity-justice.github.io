@@ -14,7 +14,7 @@ import Testimonials from "../components/testimonials";
 export async function getStaticProps() {
   const allBoardMembersData = getSortedMembersData("board");
   const allAdvisoryMembersData = getSortedMembersData("advisory");
-  const fourthPBC = getSortedMembersData("pbc-202502");
+  const currentCohort = getSortedMembersData("bc-202507");
   const successStories = getSortedMembersData("success-story");
   const caseStudies = getSortedMembersData("case-studies");
   const testimonial = getSortedMembersData("testimonials");
@@ -29,7 +29,7 @@ export async function getStaticProps() {
     props: {
       allBoardMembersData,
       allAdvisoryMembersData,
-      fourthPBC,
+      currentCohort,
       successStories,
       testimonial,
       ourTeam,
@@ -40,7 +40,7 @@ export async function getStaticProps() {
 export default function Home(props) {
   let allBoardMembersData = props.allBoardMembersData;
   let allAdvisoryMembersData = props.allAdvisoryMembersData;
-  let fourthPBC = props.fourthPBC;
+  let currentCohort = props.currentCohort;
   let successStories = props.successStories;
   let testmony = props.testimonial;
   let ourTeam = props.ourTeam;
@@ -57,9 +57,10 @@ export default function Home(props) {
         <Eligibility />
         <div className="wrapper">
           <ShowMembers
-            members={fourthPBC}
-            title="FEB-2025 PRE-B00TCAMP FELLOWS"
-            tagID="pbc-202502"
+            members={currentCohort}
+            title="JULY-2025 BOOTCAMP FELLOWS"
+            tagID="fellows-2025"
+            gridStyle="grid-4up"
             Component={MemberCardDetails}
           />
           <ShowMembers

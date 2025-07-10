@@ -71,9 +71,9 @@ export default function Menu() {
                     <div className="sub-menu">
                       <a
                         className="body2-bold"
-                        onClick={() => handleBatchClick("#pbc-202502")}
+                        onClick={() => handleBatchClick("pbc-202502")}
                       >
-                        Current
+                        Feb-2025
                       </a>
                       <a
                         className="body2-bold"
@@ -98,6 +98,12 @@ export default function Menu() {
                       Bootcamp <i className="fa fa-caret-right rotate"></i>
                     </a>
                     <div className="sub-menu">
+                      <a
+                        onClick={() => handleBatchClick("#fellows-2025")}
+                        className="body2-bold"
+                      >
+                        Current
+                      </a>
                       <a
                         onClick={() => handleBatchClick("fellows-2023")}
                         className="body2-bold"
