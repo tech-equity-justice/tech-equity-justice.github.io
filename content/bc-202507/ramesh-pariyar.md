@@ -1,5 +1,5 @@
 ---
-name: "Ramesh Pariya"
+name: "Ramesh Pariyar"
 linkedIn: "https://www.linkedin.com/in/ramesh-pariyar-744349275/"
 photo: "/images/fellows/2025/ramesh-pariyar.webp"
 ---
